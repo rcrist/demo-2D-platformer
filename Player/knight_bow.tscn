@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://cwfyei1700fkm"]
+
+[node name="KnightBow" type="CharacterBody2D"]

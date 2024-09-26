@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://btysgkoefkvrt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xb3ol"]
+bg_color = Color(0.447059, 0.188235, 0.231373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ln8js"]
+bg_color = Color(0.862745, 0.282353, 0.282353, 1)
+
+[node name="TestHealthBar" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="MinionHealthBar" type="ProgressBar" parent="."]
+custom_minimum_size = Vector2(100, 35)
+layout_mode = 1
+offset_right = 100.0
+offset_bottom = 35.0
+theme_override_styles/background = SubResource("StyleBoxFlat_xb3ol")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ln8js")
+step = 1.0
+value = 100.0
+
+[node name="BossHealthBar" type="ProgressBar" parent="."]
+custom_minimum_size = Vector2(100, 35)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = 76.0
+offset_right = 100.0
+offset_bottom = 111.0
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_xb3ol")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ln8js")
+step = 1.0
+value = 100.0

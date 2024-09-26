@@ -1,0 +1,65 @@
+[gd_scene load_steps=10 format=3 uid="uid://dkyrv6ojisfhc"]
+
+[ext_resource type="Texture2D" uid="uid://dq6xjcnf14sx0" path="res://Assets/Props/Level4 Castle Props/Animated/fire_torch_1-Sheet.png" id="1_2dj7m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b41q1"]
+atlas = ExtResource("1_2dj7m")
+region = Rect2(0, 0, 74, 152)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tfam3"]
+atlas = ExtResource("1_2dj7m")
+region = Rect2(74, 0, 74, 152)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_teyti"]
+atlas = ExtResource("1_2dj7m")
+region = Rect2(148, 0, 74, 152)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etg8k"]
+atlas = ExtResource("1_2dj7m")
+region = Rect2(222, 0, 74, 152)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ryc76"]
+atlas = ExtResource("1_2dj7m")
+region = Rect2(296, 0, 74, 152)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3p3gw"]
+atlas = ExtResource("1_2dj7m")
+region = Rect2(370, 0, 74, 152)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wl8h1"]
+atlas = ExtResource("1_2dj7m")
+region = Rect2(444, 0, 74, 152)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6s0jj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b41q1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tfam3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_teyti")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_etg8k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ryc76")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3p3gw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wl8h1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 13.0
+}]
+
+[node name="TorchLight" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_6s0jj")
+autoplay = "default"
+frame_progress = 0.628407

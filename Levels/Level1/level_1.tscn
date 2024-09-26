@@ -1,0 +1,456 @@
+[gd_scene load_steps=38 format=3 uid="uid://dpo4n725qmuc"]
+
+[ext_resource type="PackedScene" uid="uid://dexsfps85yih7" path="res://Levels/base_level.tscn" id="1_gfefx"]
+[ext_resource type="Texture2D" uid="uid://ci6o4aiq07fkx" path="res://Assets/Terrains/Tileset_Wood.png" id="2_lmbil"]
+[ext_resource type="Script" path="res://Levels/Level1/level_1.gd" id="2_mfkoh"]
+[ext_resource type="PackedScene" uid="uid://c7r6gcb3pp0gt" path="res://Levels/Level1/Ladder/ladder.tscn" id="3_sh60n"]
+[ext_resource type="PackedScene" uid="uid://cwbu2g3vfh1g1" path="res://Player/player.tscn" id="4_40pxr"]
+[ext_resource type="Texture2D" uid="uid://mqhvghb466ac" path="res://Assets/Props/Level1 Room Props/Room Props/Potplant1.png" id="4_mp2ek"]
+[ext_resource type="Texture2D" uid="uid://d21rt8rucwq5a" path="res://Assets/Props/Level1 Room Props/Room Props/Bed.png" id="5_7jcnk"]
+[ext_resource type="PackedScene" uid="uid://bf66bbola2x57" path="res://Levels/Level1/Props/shelf.tscn" id="5_ko6yl"]
+[ext_resource type="Texture2D" uid="uid://cpcke3sn3y1ph" path="res://Assets/Props/Level1 Room Props/Room Props/Window_Wood.png" id="7_v3vl4"]
+[ext_resource type="PackedScene" uid="uid://cbfcinsnj1jsr" path="res://Levels/Level1/Props/chimney.tscn" id="8_a4bss"]
+[ext_resource type="Texture2D" uid="uid://tsv2e6av8hv1" path="res://Assets/Props/Level1 Room Props/Room Props/Table_Small.png" id="8_chns4"]
+[ext_resource type="PackedScene" uid="uid://1hevbvlvlh3t" path="res://Pickups/Coin/coin.tscn" id="8_vavn3"]
+[ext_resource type="Texture2D" uid="uid://obmjeqrapk1m" path="res://Assets/Props/Level1 Room Props/Room Props/Coffee_Table.png" id="9_bpxq4"]
+[ext_resource type="Texture2D" uid="uid://ungaeaubn45" path="res://Assets/Props/Level1 Room Props/Room Props/Dining_Table.png" id="10_dxh80"]
+[ext_resource type="Texture2D" uid="uid://dfxgraic0j8rt" path="res://Assets/Props/Level1 Room Props/Room Props/Chimney_Mid.png" id="11_p30iu"]
+[ext_resource type="Texture2D" uid="uid://btafvjycf5en7" path="res://Assets/Props/Level1 Room Props/Room Props/Candlestick_Floor_Silver.png" id="13_y8ftt"]
+[ext_resource type="PackedScene" uid="uid://c72sbffhnj1tf" path="res://Levels/Level1/Animated Props/candle.tscn" id="14_d4vr5"]
+[ext_resource type="PackedScene" uid="uid://b7sl7f62lu0p7" path="res://Levels/Level1/Props/armor.tscn" id="14_doohi"]
+[ext_resource type="PackedScene" uid="uid://cp5s0m5c7rue6" path="res://Levels/Level1/Props/door.tscn" id="15_6a7rv"]
+[ext_resource type="Texture2D" uid="uid://i3bvrjxfd871" path="res://Assets/Props/Level1 Room Props/Room Props/Chandelier_Silver.png" id="15_m6rmb"]
+[ext_resource type="PackedScene" uid="uid://cg1sot7bmbi75" path="res://Levels/Level1/Animated Props/treasure_chest.tscn" id="15_v6kh2"]
+[ext_resource type="Texture2D" uid="uid://chfnc8ckfv8qr" path="res://Assets/Props/Level1 Room Props/Room Props/Bookshelf.png" id="16_wjla8"]
+[ext_resource type="Texture2D" uid="uid://cu2pd6fqqiymt" path="res://Assets/Props/Level1 Room Props/Room Props/Book_Pile1.png" id="17_3n5au"]
+[ext_resource type="Texture2D" uid="uid://b35kkve7toau8" path="res://Assets/Props/Level1 Room Props/Room Props/Book_Pile2.png" id="18_pgras"]
+[ext_resource type="Texture2D" uid="uid://gv2dcr8f0ick" path="res://Assets/Props/Level1 Room Props/Room Props/Book_Stack1.png" id="19_05ljs"]
+[ext_resource type="Texture2D" uid="uid://dthyxgd2j6tjs" path="res://Assets/Props/Level1 Room Props/Room Props/Book_Stack2.png" id="20_7bk44"]
+[ext_resource type="Texture2D" uid="uid://bbsybkerk84s" path="res://Assets/Props/Level1 Room Props/Room Props/Scroll1.png" id="21_5xp42"]
+[ext_resource type="Texture2D" uid="uid://da54cn6l12e3v" path="res://Assets/Props/Level1 Room Props/Room Props/Scroll2.png" id="22_4hy51"]
+[ext_resource type="Texture2D" uid="uid://cbyew7wdgncew" path="res://Assets/Props/Level1 Room Props/Room Props/Scroll_Wall.png" id="23_7ispp"]
+[ext_resource type="Texture2D" uid="uid://4bq5a71a64ld" path="res://Assets/Props/Level1 Room Props/Room Props/Cobweb.png" id="24_yuhll"]
+[ext_resource type="Texture2D" uid="uid://j8ebtt36eo4d" path="res://Assets/Props/Level1 Room Props/Room Props/Potplant2.png" id="30_y34bs"]
+[ext_resource type="Texture2D" uid="uid://b72i30qpwt4xm" path="res://Assets/Props/Level1 Room Props/Room Props/Potplant3.png" id="31_54suj"]
+[ext_resource type="Texture2D" uid="uid://3cvkjtphh8um" path="res://Assets/Props/Level1 Room Props/Room Props/Stool_Blue.png" id="32_8nfux"]
+[ext_resource type="Texture2D" uid="uid://ca00ge1x2214i" path="res://Assets/Props/Level1 Room Props/Room Props/Stool_Red.png" id="33_jy263"]
+[ext_resource type="AudioStream" uid="uid://cbqvaq0ug4fbb" path="res://Assets/Audio/SFX/Ambient/Amb_Building1.wav" id="34_ae877"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5xx76"]
+texture = ExtResource("2_lmbil")
+texture_region_size = Vector2i(256, 256)
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, -20, -128, -20)
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, -46, -128, -50, 128, -128, 128)
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, -24, -128, -20)
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, 128, 50, 128, -82, -20, -128, -24)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, -28, 86, -20, -42, 128, -128, 128)
+8:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(52, -128, 128, -128, 128, 128, 54, 128)
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, 20, 128, 22, 128, 128, -128, 128)
+6:3/0 = 0
+6:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, -38, -128, -42, -96, 76, 16, 128, 18, 128, 128, -128, 128)
+7:3/0 = 0
+7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, 24, -86, 20, 46, -102, 44, -128, 128, -128, 128, 128, -128, 128)
+8:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, -20, 84, -16, 20, 56, -48, 128, -128, 128)
+4:4/0 = 0
+5:4/0 = 0
+5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, 128, 52, 128, -88, -24, -128, -24)
+6:4/0 = 0
+7:4/0 = 0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(52, -128, 128, -128, 128, 128, 128, 128, -128, 128, -128, 18, -92, 16)
+8:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_b8qru"]
+tile_size = Vector2i(256, 256)
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 5
+sources/1 = SubResource("TileSetAtlasSource_5xx76")
+
+[node name="Level1" instance=ExtResource("1_gfefx")]
+script = ExtResource("2_mfkoh")
+
+[node name="TileMap" type="TileMap" parent="." index="1"]
+tile_set = SubResource("TileSet_b8qru")
+format = 2
+layer_0/name = "Ground"
+layer_0/tile_data = PackedInt32Array(-65536, 393217, 3, -65516, 458753, 3, -65534, 327681, 3, -65533, 327681, 3, -65532, 327681, 3, -65531, 327681, 3, -65530, 327681, 3, -65529, 327681, 3, -65528, 327681, 3, -65527, 327681, 3, -65526, 327681, 3, -65525, 327681, 3, -65524, 327681, 3, -65523, 327681, 3, -65522, 327681, 3, -65521, 327681, 3, -65520, 327681, 3, -65519, 327681, 3, -65518, 327681, 3, -65517, 327681, 3, -65535, 327681, 3, -262144, 458753, 2, -196608, 65537, 2, -131072, 65537, 2, -327680, 65537, 2, -327660, 65537, 3, -262124, 393217, 2, -196588, 65537, 3, -131052, 65537, 3, -327661, 65537, 0, -327663, 65537, 0, -327675, 65537, 0, -327674, 65537, 0, -327673, 65537, 0, -327672, 65537, 0, -327671, 65537, 0, -327670, 65537, 0, -327669, 65537, 0, -327668, 65537, 0, -327667, 65537, 0, -327666, 65537, 0, -327665, 65537, 0, -327664, 65537, 0, -327679, 65537, 0, -327678, 65537, 0, -327677, 65537, 0, -327676, 65537, 0, -524288, 458753, 2, -458752, 65537, 2, -393216, 65537, 2, -524268, 393217, 2, -458732, 65537, 3, -393196, 65537, 3, -458751, 65537, 0, -393215, 65537, 0, -524286, 327681, 2, -458750, 65537, 0, -393214, 65537, 0, -524285, 327681, 2, -458749, 65537, 0, -393213, 65537, 0, -524284, 327681, 2, -458748, 65537, 0, -393212, 65537, 0, -524283, 327681, 2, -458747, 65537, 0, -393211, 65537, 0, -524282, 327681, 2, -458746, 65537, 0, -393210, 65537, 0, -524281, 327681, 2, -458745, 65537, 0, -393209, 65537, 0, -524280, 327681, 2, -458744, 65537, 0, -393208, 65537, 0, -524279, 327681, 2, -458743, 65537, 0, -393207, 65537, 0, -524278, 327681, 2, -458742, 65537, 0, -393206, 65537, 0, -524277, 327681, 2, -458741, 65537, 0, -393205, 65537, 0, -524276, 327681, 2, -458740, 65537, 0, -393204, 65537, 0, -524275, 327681, 2, -458739, 65537, 0, -393203, 65537, 0, -524274, 327681, 2, -458738, 65537, 0, -393202, 65537, 0, -524273, 327681, 2, -458737, 65537, 0, -393201, 65537, 0, -524272, 327681, 2, -458736, 65537, 0, -393200, 65537, 0, -524271, 327681, 2, -458735, 65537, 0, -393199, 65537, 0, -524270, 327681, 2, -458734, 65537, 0, -393198, 65537, 0, -524269, 327681, 2, -458733, 65537, 0, -393197, 65537, 0, -327662, 65537, 0, -262143, 327681, 2, -196607, 65537, 0, -131071, 65537, 0, -262142, 327681, 2, -196606, 65537, 0, -131070, 65537, 0, -262141, 327681, 2, -196605, 65537, 0, -131069, 65537, 0, -262140, 327681, 2, -196604, 65537, 0, -131068, 65537, 0, -262139, 327681, 2, -196603, 65537, 0, -131067, 65537, 0, -262138, 327681, 2, -196602, 65537, 0, -131066, 65537, 0, -262137, 327681, 2, -196601, 65537, 0, -131065, 65537, 0, -262136, 327681, 2, -196600, 65537, 0, -131064, 65537, 0, -262135, 327681, 2, -196599, 65537, 0, -131063, 65537, 0, -262134, 327681, 2, -196598, 65537, 0, -131062, 65537, 0, -262133, 327681, 2, -196597, 65537, 0, -131061, 65537, 0, -262132, 327681, 2, -196596, 65537, 0, -131060, 65537, 0, -262131, 327681, 2, -196595, 65537, 0, -131059, 65537, 0, -262130, 327681, 2, -196594, 65537, 0, -131058, 65537, 0, -262129, 327681, 2, -196593, 65537, 0, -131057, 65537, 0, -262128, 327681, 2, -196592, 65537, 0, -131056, 65537, 0, -262127, 327681, 2, -196591, 65537, 0, -131055, 65537, 0, -262126, 65537, 0, -196590, 65537, 0, -131054, 65537, 0, -262125, 327681, 2, -196589, 65537, 0, -131053, 65537, 0, -524287, 327681, 2)
+
+[node name="LadderSection1" parent="." index="2" instance=ExtResource("3_sh60n")]
+position = Vector2(4734, -619)
+scale = Vector2(1.75, 1.75)
+
+[node name="BackgroundProps" type="Node2D" parent="." index="3"]
+
+[node name="Bed" type="Sprite2D" parent="BackgroundProps" index="0"]
+position = Vector2(376, -164)
+texture = ExtResource("5_7jcnk")
+
+[node name="Shelves" type="Node2D" parent="BackgroundProps" index="1"]
+
+[node name="Shelf1" type="Node2D" parent="BackgroundProps/Shelves" index="0"]
+
+[node name="Shelf" parent="BackgroundProps/Shelves/Shelf1" index="0" instance=ExtResource("5_ko6yl")]
+position = Vector2(905, -429)
+
+[node name="Coin1" parent="BackgroundProps/Shelves/Shelf1" index="1" instance=ExtResource("8_vavn3")]
+position = Vector2(900, -480)
+
+[node name="Coin2" parent="BackgroundProps/Shelves/Shelf1" index="2" instance=ExtResource("8_vavn3")]
+position = Vector2(1066, -481)
+
+[node name="Coin3" parent="BackgroundProps/Shelves/Shelf1" index="3" instance=ExtResource("8_vavn3")]
+position = Vector2(984, -480)
+
+[node name="Shelf2" type="Node2D" parent="BackgroundProps/Shelves" index="1"]
+position = Vector2(1620, -12)
+
+[node name="Shelf" parent="BackgroundProps/Shelves/Shelf2" index="0" instance=ExtResource("5_ko6yl")]
+position = Vector2(905, -429)
+
+[node name="Coin1" parent="BackgroundProps/Shelves/Shelf2" index="1" instance=ExtResource("8_vavn3")]
+position = Vector2(900, -480)
+
+[node name="Coin2" parent="BackgroundProps/Shelves/Shelf2" index="2" instance=ExtResource("8_vavn3")]
+position = Vector2(1066, -481)
+
+[node name="Coin3" parent="BackgroundProps/Shelves/Shelf2" index="3" instance=ExtResource("8_vavn3")]
+position = Vector2(984, -480)
+
+[node name="Shelf3" type="Node2D" parent="BackgroundProps/Shelves" index="2"]
+position = Vector2(2748, 0)
+
+[node name="Shelf" parent="BackgroundProps/Shelves/Shelf3" index="0" instance=ExtResource("5_ko6yl")]
+position = Vector2(905, -429)
+
+[node name="Coin1" parent="BackgroundProps/Shelves/Shelf3" index="1" instance=ExtResource("8_vavn3")]
+position = Vector2(900, -480)
+
+[node name="Coin2" parent="BackgroundProps/Shelves/Shelf3" index="2" instance=ExtResource("8_vavn3")]
+position = Vector2(1066, -481)
+
+[node name="Coin3" parent="BackgroundProps/Shelves/Shelf3" index="3" instance=ExtResource("8_vavn3")]
+position = Vector2(984, -480)
+
+[node name="Shelf4" type="Node2D" parent="BackgroundProps/Shelves" index="3"]
+position = Vector2(1624, -1004)
+
+[node name="Shelf" parent="BackgroundProps/Shelves/Shelf4" index="0" instance=ExtResource("5_ko6yl")]
+position = Vector2(905, -429)
+
+[node name="Coin1" parent="BackgroundProps/Shelves/Shelf4" index="1" instance=ExtResource("8_vavn3")]
+position = Vector2(900, -480)
+
+[node name="Coin2" parent="BackgroundProps/Shelves/Shelf4" index="2" instance=ExtResource("8_vavn3")]
+position = Vector2(1066, -481)
+
+[node name="Coin3" parent="BackgroundProps/Shelves/Shelf4" index="3" instance=ExtResource("8_vavn3")]
+position = Vector2(984, -480)
+
+[node name="Shelf5" type="Node2D" parent="BackgroundProps/Shelves" index="4"]
+position = Vector2(2738, -1013)
+
+[node name="Shelf" parent="BackgroundProps/Shelves/Shelf5" index="0" instance=ExtResource("5_ko6yl")]
+position = Vector2(905, -429)
+
+[node name="Coin1" parent="BackgroundProps/Shelves/Shelf5" index="1" instance=ExtResource("8_vavn3")]
+position = Vector2(900, -480)
+
+[node name="Coin2" parent="BackgroundProps/Shelves/Shelf5" index="2" instance=ExtResource("8_vavn3")]
+position = Vector2(1066, -481)
+
+[node name="Coin3" parent="BackgroundProps/Shelves/Shelf5" index="3" instance=ExtResource("8_vavn3")]
+position = Vector2(984, -480)
+
+[node name="Shelf6" type="Node2D" parent="BackgroundProps/Shelves" index="5"]
+position = Vector2(1046, -1974)
+
+[node name="Shelf" parent="BackgroundProps/Shelves/Shelf6" index="0" instance=ExtResource("5_ko6yl")]
+position = Vector2(-346, 567)
+
+[node name="Coin1" parent="BackgroundProps/Shelves/Shelf6" index="1" instance=ExtResource("8_vavn3")]
+position = Vector2(-351, 516)
+
+[node name="Coin2" parent="BackgroundProps/Shelves/Shelf6" index="2" instance=ExtResource("8_vavn3")]
+position = Vector2(-185, 515)
+
+[node name="Coin3" parent="BackgroundProps/Shelves/Shelf6" index="3" instance=ExtResource("8_vavn3")]
+position = Vector2(-267, 516)
+
+[node name="Shelf7" type="Node2D" parent="BackgroundProps/Shelves" index="6"]
+position = Vector2(1601, -1974)
+
+[node name="Shelf" parent="BackgroundProps/Shelves/Shelf7" index="0" instance=ExtResource("5_ko6yl")]
+position = Vector2(-62, 527)
+
+[node name="Coin1" parent="BackgroundProps/Shelves/Shelf7" index="1" instance=ExtResource("8_vavn3")]
+position = Vector2(-67, 476)
+
+[node name="Coin2" parent="BackgroundProps/Shelves/Shelf7" index="2" instance=ExtResource("8_vavn3")]
+position = Vector2(99, 475)
+
+[node name="Coin3" parent="BackgroundProps/Shelves/Shelf7" index="3" instance=ExtResource("8_vavn3")]
+position = Vector2(17, 476)
+
+[node name="Windows" type="Node2D" parent="BackgroundProps" index="2"]
+
+[node name="Window1" type="Sprite2D" parent="BackgroundProps/Windows" index="0"]
+position = Vector2(498, -647)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_v3vl4")
+
+[node name="Window2" type="Sprite2D" parent="BackgroundProps/Windows" index="1"]
+position = Vector2(4248, -647)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_v3vl4")
+
+[node name="Window3" type="Sprite2D" parent="BackgroundProps/Windows" index="2"]
+position = Vector2(1222, -1710)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_v3vl4")
+
+[node name="Window4" type="Sprite2D" parent="BackgroundProps/Windows" index="3"]
+position = Vector2(4209, -1722)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_v3vl4")
+
+[node name="Window5" type="Sprite2D" parent="BackgroundProps/Windows" index="4"]
+position = Vector2(2115, -1575)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_v3vl4")
+
+[node name="Window6" type="Sprite2D" parent="BackgroundProps/Windows" index="5"]
+visible = false
+position = Vector2(1431, -2689)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("7_v3vl4")
+
+[node name="Tables" type="Node2D" parent="BackgroundProps" index="3"]
+
+[node name="SmallTable" type="Sprite2D" parent="BackgroundProps/Tables" index="0"]
+position = Vector2(4242, -164)
+texture = ExtResource("8_chns4")
+
+[node name="PostumTable" type="Sprite2D" parent="BackgroundProps/Tables" index="1"]
+position = Vector2(1114, -1061)
+texture = ExtResource("9_bpxq4")
+
+[node name="DiningTable" type="Sprite2D" parent="BackgroundProps/Tables" index="2"]
+position = Vector2(2164, -161)
+texture = ExtResource("10_dxh80")
+
+[node name="ChimneyAssy" type="Node2D" parent="BackgroundProps" index="4"]
+
+[node name="Chimney" parent="BackgroundProps/ChimneyAssy" index="0" instance=ExtResource("8_a4bss")]
+position = Vector2(3164, -258)
+
+[node name="ChimneyMid1" type="Sprite2D" parent="BackgroundProps/ChimneyAssy" index="1"]
+position = Vector2(3164, -450)
+scale = Vector2(0.96, 1)
+texture = ExtResource("11_p30iu")
+
+[node name="ChimneyMid2" type="Sprite2D" parent="BackgroundProps/ChimneyAssy" index="2"]
+position = Vector2(3164, -705)
+scale = Vector2(0.96, 1.65)
+texture = ExtResource("11_p30iu")
+
+[node name="ChimneyMid3" type="Sprite2D" parent="BackgroundProps/ChimneyAssy" index="3"]
+position = Vector2(3164, -1657)
+scale = Vector2(0.96, 2.25)
+texture = ExtResource("11_p30iu")
+
+[node name="ChimneyMid4" type="Sprite2D" parent="BackgroundProps/ChimneyAssy" index="4"]
+position = Vector2(3164, -1237)
+scale = Vector2(0.96, 1.65)
+texture = ExtResource("11_p30iu")
+
+[node name="LitFloorCandlestick" type="Node2D" parent="BackgroundProps" index="5"]
+
+[node name="FloorCandlestick" type="Sprite2D" parent="BackgroundProps/LitFloorCandlestick" index="0"]
+position = Vector2(1936, -1132)
+texture = ExtResource("13_y8ftt")
+
+[node name="Candle" parent="BackgroundProps/LitFloorCandlestick" index="1" instance=ExtResource("14_d4vr5")]
+position = Vector2(1889, -1261)
+
+[node name="Candle2" parent="BackgroundProps/LitFloorCandlestick" index="2" instance=ExtResource("14_d4vr5")]
+position = Vector2(1937, -1273)
+
+[node name="Candle3" parent="BackgroundProps/LitFloorCandlestick" index="3" instance=ExtResource("14_d4vr5")]
+position = Vector2(1982, -1261)
+
+[node name="Chandelier" type="Node2D" parent="BackgroundProps" index="6"]
+position = Vector2(91, 1024)
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundProps/Chandelier" index="0"]
+position = Vector2(4890, -2836)
+texture = ExtResource("15_m6rmb")
+
+[node name="Candle" parent="BackgroundProps/Chandelier" index="1" instance=ExtResource("14_d4vr5")]
+position = Vector2(4806, -2798)
+
+[node name="Candle2" parent="BackgroundProps/Chandelier" index="2" instance=ExtResource("14_d4vr5")]
+position = Vector2(4973, -2798)
+
+[node name="Candle3" parent="BackgroundProps/Chandelier" index="3" instance=ExtResource("14_d4vr5")]
+position = Vector2(4924, -2798)
+
+[node name="Candle4" parent="BackgroundProps/Chandelier" index="4" instance=ExtResource("14_d4vr5")]
+position = Vector2(4855, -2798)
+
+[node name="Bookcase" type="Node2D" parent="BackgroundProps" index="7"]
+position = Vector2(2551, 1935)
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundProps/Bookcase" index="0"]
+position = Vector2(1192.5, -2184)
+texture = ExtResource("16_wjla8")
+
+[node name="Sprite2D2" type="Sprite2D" parent="BackgroundProps/Bookcase" index="1"]
+position = Vector2(1193, -2334)
+texture = ExtResource("17_3n5au")
+
+[node name="Sprite2D3" type="Sprite2D" parent="BackgroundProps/Bookcase" index="2"]
+position = Vector2(1235, -2250)
+texture = ExtResource("18_pgras")
+
+[node name="Sprite2D4" type="Sprite2D" parent="BackgroundProps/Bookcase" index="3"]
+position = Vector2(1144, -2253)
+texture = ExtResource("19_05ljs")
+
+[node name="Sprite2D6" type="Sprite2D" parent="BackgroundProps/Bookcase" index="4"]
+position = Vector2(1241, -2110)
+scale = Vector2(-1, 1)
+texture = ExtResource("19_05ljs")
+
+[node name="Sprite2D5" type="Sprite2D" parent="BackgroundProps/Bookcase" index="5"]
+position = Vector2(1192.5, -2184)
+texture = ExtResource("20_7bk44")
+
+[node name="Scrolls" type="Node2D" parent="BackgroundProps" index="8"]
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundProps/Scrolls" index="0"]
+position = Vector2(2153, -243)
+texture = ExtResource("21_5xp42")
+
+[node name="Sprite2D2" type="Sprite2D" parent="BackgroundProps/Scrolls" index="1"]
+position = Vector2(4237, -247)
+texture = ExtResource("22_4hy51")
+
+[node name="Sprite2D3" type="Sprite2D" parent="BackgroundProps/Scrolls" index="2"]
+position = Vector2(2173, -499)
+texture = ExtResource("23_7ispp")
+
+[node name="Cobwebs" type="Node2D" parent="BackgroundProps" index="9"]
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundProps/Cobwebs" index="0"]
+position = Vector2(152, -1870)
+texture = ExtResource("24_yuhll")
+
+[node name="Sprite2D2" type="Sprite2D" parent="BackgroundProps/Cobwebs" index="1"]
+position = Vector2(5225, -1887)
+scale = Vector2(-1, 1)
+texture = ExtResource("24_yuhll")
+
+[node name="TreasureChest" parent="." index="4" node_paths=PackedStringArray("spawn_point_key", "spawn_point_coin") instance=ExtResource("15_v6kh2")]
+position = Vector2(454, -1043)
+spawn_point_key = NodePath("SpawnKey")
+spawn_point_coin = NodePath("SpawnCoin")
+
+[node name="SpawnKey" type="Marker2D" parent="TreasureChest" index="2"]
+position = Vector2(892, -40)
+
+[node name="SpawnCoin" type="Marker2D" parent="TreasureChest" index="3"]
+position = Vector2(362, -42)
+
+[node name="Armor" parent="." index="5" instance=ExtResource("14_doohi")]
+position = Vector2(1112, -1100)
+
+[node name="Door" parent="." index="6" instance=ExtResource("15_6a7rv")]
+position = Vector2(1519, -106)
+
+[node name="Player" parent="." index="7" instance=ExtResource("4_40pxr")]
+position = Vector2(682, -116)
+
+[node name="PlayerCamera" type="Camera2D" parent="Player" index="3"]
+limit_left = 10
+limit_top = -3050
+limit_right = 5350
+limit_bottom = -50
+
+[node name="ForegroundProps" type="Node2D" parent="." index="8"]
+
+[node name="PottedPlant1" type="Sprite2D" parent="ForegroundProps" index="0"]
+position = Vector2(971, -182)
+texture = ExtResource("4_mp2ek")
+
+[node name="PottedPlant2" type="Sprite2D" parent="ForegroundProps" index="1"]
+position = Vector2(4219, -1102)
+texture = ExtResource("30_y34bs")
+
+[node name="PottedPlant3" type="Sprite2D" parent="ForegroundProps" index="2"]
+position = Vector2(5082, -166)
+texture = ExtResource("31_54suj")
+
+[node name="Stools" type="Node2D" parent="ForegroundProps" index="3"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ForegroundProps/Stools" index="0"]
+position = Vector2(2599, -141)
+texture = ExtResource("32_8nfux")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ForegroundProps/Stools" index="1"]
+position = Vector2(3728, -1055)
+texture = ExtResource("33_jy263")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="9"]
+stream = ExtResource("34_ae877")

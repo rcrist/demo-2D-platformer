@@ -1,0 +1,659 @@
+[gd_scene load_steps=151 format=3 uid="uid://doxrbygrqsbxn"]
+
+[ext_resource type="Texture2D" uid="uid://hqbnxev2asq6" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_00.png" id="1_cp0w6"]
+[ext_resource type="Script" path="res://Enemies/Skeleton/enemy_skeleton.gd" id="1_t3d4t"]
+[ext_resource type="Texture2D" uid="uid://ddxjlovit34t6" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_01.png" id="2_kyyjh"]
+[ext_resource type="Texture2D" uid="uid://bbfgi4sxj5sls" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_02.png" id="3_isild"]
+[ext_resource type="Texture2D" uid="uid://c8ljh1e5p02yj" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_03.png" id="4_urykx"]
+[ext_resource type="Texture2D" uid="uid://c5wabrcg75nvj" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_04.png" id="5_jxhlc"]
+[ext_resource type="Texture2D" uid="uid://c67xx8ysp5gwp" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_05.png" id="6_xgnre"]
+[ext_resource type="Texture2D" uid="uid://bu4idw0uhnst1" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_06.png" id="7_j2hoe"]
+[ext_resource type="Texture2D" uid="uid://cm8m8u78ahe8t" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_07.png" id="8_rlm02"]
+[ext_resource type="Texture2D" uid="uid://kg33phadktl7" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_08.png" id="9_vgjx7"]
+[ext_resource type="Texture2D" uid="uid://c3e8bbq7bgfhq" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_09.png" id="10_p0081"]
+[ext_resource type="Texture2D" uid="uid://j0yyy6khei7r" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_10.png" id="11_2me5b"]
+[ext_resource type="Texture2D" uid="uid://gdcbupyasumx" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_11.png" id="12_aum4x"]
+[ext_resource type="Texture2D" uid="uid://06hgvr1vdy2q" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_12.png" id="13_vmhje"]
+[ext_resource type="Texture2D" uid="uid://dsxocafqehm1h" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_13.png" id="14_k2rmk"]
+[ext_resource type="Texture2D" uid="uid://xdq627snf2as" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_14.png" id="15_h4s5l"]
+[ext_resource type="Texture2D" uid="uid://btlf4dhonilda" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_15.png" id="16_avw8k"]
+[ext_resource type="Texture2D" uid="uid://mrexc31uo7h3" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_16.png" id="17_nhryj"]
+[ext_resource type="Texture2D" uid="uid://bnqf4x3mdayuh" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_17.png" id="18_tvehc"]
+[ext_resource type="Texture2D" uid="uid://dpdypafgrejft" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_18.png" id="19_pf7ck"]
+[ext_resource type="Texture2D" uid="uid://bxdjgr4lo0px7" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_19.png" id="20_g1rq1"]
+[ext_resource type="Texture2D" uid="uid://bx7ocgvgk8us" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_20.png" id="21_5gtys"]
+[ext_resource type="Texture2D" uid="uid://cbi2m4kr21ln" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_21.png" id="22_24uwh"]
+[ext_resource type="Texture2D" uid="uid://byc20gw1hneiv" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_22.png" id="23_2v6wd"]
+[ext_resource type="Texture2D" uid="uid://bon3q6exwd1n8" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_23.png" id="24_ewcjp"]
+[ext_resource type="Texture2D" uid="uid://1hi4so2l0vu3" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Attack_Sword_Light/enemy_skeleton_attack_sword_light_24.png" id="25_tij85"]
+[ext_resource type="Texture2D" uid="uid://c75ukecpww6m3" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_00.png" id="26_utsi0"]
+[ext_resource type="Texture2D" uid="uid://7x6n3ukxrvxg" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_01.png" id="27_48kg7"]
+[ext_resource type="Texture2D" uid="uid://ceveta5wmje1y" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_02.png" id="28_mhpv6"]
+[ext_resource type="Texture2D" uid="uid://dicltp4tgvx8v" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_03.png" id="29_trpam"]
+[ext_resource type="Texture2D" uid="uid://yww2ufsnq612" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_04.png" id="30_tvmus"]
+[ext_resource type="Texture2D" uid="uid://e0b8xxkst5si" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_05.png" id="31_isdxx"]
+[ext_resource type="Texture2D" uid="uid://d2j8xv3jpm3db" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_06.png" id="32_iy8d7"]
+[ext_resource type="Texture2D" uid="uid://cxokndx2ecudw" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_07.png" id="33_y4af6"]
+[ext_resource type="Texture2D" uid="uid://b5rvakp4cw3vq" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_08.png" id="34_13o8w"]
+[ext_resource type="Texture2D" uid="uid://baru64ph2jwfi" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_09.png" id="35_i8e5t"]
+[ext_resource type="Texture2D" uid="uid://c5fcmmwy7r61a" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_10.png" id="36_1c8kj"]
+[ext_resource type="Texture2D" uid="uid://u64ohhautli2" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_11.png" id="37_xxuk1"]
+[ext_resource type="Texture2D" uid="uid://338tj7ps22e2" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_12.png" id="38_a5bfp"]
+[ext_resource type="Texture2D" uid="uid://civbymrk77yfc" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_13.png" id="39_yadar"]
+[ext_resource type="Texture2D" uid="uid://qddsyhaqnef7" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_14.png" id="40_2s3f6"]
+[ext_resource type="Texture2D" uid="uid://cfh0xr1wcqbe5" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_15.png" id="41_q8yfe"]
+[ext_resource type="Texture2D" uid="uid://cy6bnf1i0b07n" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_16.png" id="42_n0lbx"]
+[ext_resource type="Texture2D" uid="uid://dgxpeesigqo6m" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_17.png" id="43_pe8ag"]
+[ext_resource type="Texture2D" uid="uid://caxyeqwd6335n" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_18.png" id="44_f750o"]
+[ext_resource type="Texture2D" uid="uid://calt20g4a0xsp" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_19.png" id="45_7u5vo"]
+[ext_resource type="Texture2D" uid="uid://chfh8wiymsmo3" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_20.png" id="46_ks35b"]
+[ext_resource type="Texture2D" uid="uid://c7ivreuw6aw3u" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_21.png" id="47_lpbcx"]
+[ext_resource type="Texture2D" uid="uid://dm6a874pan8c1" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_22.png" id="48_n27fv"]
+[ext_resource type="Texture2D" uid="uid://dmet3aoyr0x28" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_23.png" id="49_cfd6w"]
+[ext_resource type="Texture2D" uid="uid://bh81aqqlyx4l8" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_24.png" id="50_0p0js"]
+[ext_resource type="Texture2D" uid="uid://dna2j2vhepkaf" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_25.png" id="51_35yju"]
+[ext_resource type="Texture2D" uid="uid://bxgs0qdkwhuro" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Die_Sword/enemy_skeleton_die_sword_26.png" id="52_f13bo"]
+[ext_resource type="Texture2D" uid="uid://iiov18l2rcc5" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_00.png" id="53_58gat"]
+[ext_resource type="Texture2D" uid="uid://xcms0an27cnd" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_01.png" id="54_jbvp1"]
+[ext_resource type="Texture2D" uid="uid://dd4upuhasrtud" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_02.png" id="55_lkpk6"]
+[ext_resource type="Texture2D" uid="uid://ch5u25o4tk747" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_03.png" id="56_tr6re"]
+[ext_resource type="Texture2D" uid="uid://b6eam86o1mo7p" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_04.png" id="57_behc0"]
+[ext_resource type="Texture2D" uid="uid://paf8ey40xjay" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_05.png" id="58_dgb5y"]
+[ext_resource type="Texture2D" uid="uid://dx5vmkwbwvy8h" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_06.png" id="59_t3twj"]
+[ext_resource type="Texture2D" uid="uid://bo24iqyoanbaf" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_07.png" id="60_qla2w"]
+[ext_resource type="Texture2D" uid="uid://cocyx8ww6dl76" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_08.png" id="61_v63xu"]
+[ext_resource type="Texture2D" uid="uid://dqt7xld3eb21j" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_09.png" id="62_3mpcf"]
+[ext_resource type="Texture2D" uid="uid://dgw23b02d404g" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_10.png" id="63_tnhfm"]
+[ext_resource type="Texture2D" uid="uid://bb0mhkh78phf5" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_11.png" id="64_6hwn2"]
+[ext_resource type="Texture2D" uid="uid://bi08nim2olhxb" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_12.png" id="65_v5uqc"]
+[ext_resource type="Texture2D" uid="uid://bopepb2nhlp8d" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_13.png" id="66_j4ede"]
+[ext_resource type="Texture2D" uid="uid://b8iy6r4l20gpv" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Hit_Sword/enemy_skeleton_hit_sword_14.png" id="67_457mp"]
+[ext_resource type="Texture2D" uid="uid://slyefqs7w65o" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_00.png" id="68_u6g3l"]
+[ext_resource type="Texture2D" uid="uid://bog6jxe6aorcw" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_01.png" id="69_myv4w"]
+[ext_resource type="Texture2D" uid="uid://mwqsq7am5bt6" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_02.png" id="70_844dc"]
+[ext_resource type="Texture2D" uid="uid://bvvslt16uruck" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_03.png" id="71_f2ugi"]
+[ext_resource type="Texture2D" uid="uid://bg3ixsqy0m8by" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_04.png" id="72_3rgda"]
+[ext_resource type="Texture2D" uid="uid://ci2rlwvplcpae" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_05.png" id="73_v4wbm"]
+[ext_resource type="Texture2D" uid="uid://cofpl7nruim3e" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_06.png" id="74_jh7h5"]
+[ext_resource type="Texture2D" uid="uid://cy0r8nugmeasl" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_07.png" id="75_8idk8"]
+[ext_resource type="Texture2D" uid="uid://djsc0c6bme1sg" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_08.png" id="76_jbayq"]
+[ext_resource type="Texture2D" uid="uid://bd2qn7u035086" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_09.png" id="77_jjfqb"]
+[ext_resource type="Texture2D" uid="uid://cx5mwytv2l1w4" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_10.png" id="78_llmxg"]
+[ext_resource type="Texture2D" uid="uid://dl4fi6mvs7wnt" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_11.png" id="79_8wlbq"]
+[ext_resource type="Texture2D" uid="uid://chmmsoeqvl6lt" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_12.png" id="80_jpihb"]
+[ext_resource type="Texture2D" uid="uid://ciuwkjaauxks1" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_13.png" id="81_holc2"]
+[ext_resource type="Texture2D" uid="uid://d4j144373kpb5" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_14.png" id="82_nq1am"]
+[ext_resource type="Texture2D" uid="uid://cr252eb5lkr8j" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_15.png" id="83_jkol7"]
+[ext_resource type="Texture2D" uid="uid://djqsrm41m5pob" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_16.png" id="84_w8wqf"]
+[ext_resource type="Texture2D" uid="uid://honltu8ispt5" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_17.png" id="85_28my8"]
+[ext_resource type="Texture2D" uid="uid://bqwpl1t76ewi7" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_18.png" id="86_x7v28"]
+[ext_resource type="Texture2D" uid="uid://jmaffdsxmtcj" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_19.png" id="87_ulcvw"]
+[ext_resource type="Texture2D" uid="uid://01w5oaupf01k" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_20.png" id="88_jhp2o"]
+[ext_resource type="Texture2D" uid="uid://dvlbl0aujyn5s" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Idle_Sword/enemy_skeleton_idle_sword_21.png" id="89_lhdn2"]
+[ext_resource type="Texture2D" uid="uid://137cqenr0c5g" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_00.png" id="90_14wkr"]
+[ext_resource type="Texture2D" uid="uid://tqww6v60ldgs" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_01.png" id="91_03ct6"]
+[ext_resource type="Texture2D" uid="uid://b0lpe8m3x1nce" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_02.png" id="92_e6583"]
+[ext_resource type="Texture2D" uid="uid://dfrxsv0gpjc26" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_03.png" id="93_khcek"]
+[ext_resource type="Texture2D" uid="uid://c5gamx8t3ant0" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_04.png" id="94_gk8um"]
+[ext_resource type="Texture2D" uid="uid://c77qlfjeah1t6" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_05.png" id="95_3kjrv"]
+[ext_resource type="Texture2D" uid="uid://xesq5si5n6y" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_06.png" id="96_iwiux"]
+[ext_resource type="Texture2D" uid="uid://casmlhwqa5m8b" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_07.png" id="97_rgt03"]
+[ext_resource type="Texture2D" uid="uid://wpkja0ty4q6b" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_08.png" id="98_ricp1"]
+[ext_resource type="Texture2D" uid="uid://df2uikrvvd3d5" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_09.png" id="99_k4pi2"]
+[ext_resource type="Texture2D" uid="uid://cgt7peov6nt32" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_10.png" id="100_ku6eh"]
+[ext_resource type="Texture2D" uid="uid://cfwavukwb08r5" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_11.png" id="101_vqm66"]
+[ext_resource type="Texture2D" uid="uid://dnsc5rqrv6e0l" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_12.png" id="102_wq875"]
+[ext_resource type="Texture2D" uid="uid://bmqginq6t8sqs" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_13.png" id="103_rxli3"]
+[ext_resource type="Texture2D" uid="uid://boohw3kcwm1cg" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_14.png" id="104_qa5yl"]
+[ext_resource type="Texture2D" uid="uid://bxi0qml7ndhtj" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_15.png" id="105_l35li"]
+[ext_resource type="Texture2D" uid="uid://dt5e36sxw4sqo" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_16.png" id="106_woqki"]
+[ext_resource type="Texture2D" uid="uid://dsaijm1hhdyy7" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_17.png" id="107_v5mah"]
+[ext_resource type="Texture2D" uid="uid://7kn3w7dff5t" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_18.png" id="108_qqvfc"]
+[ext_resource type="Texture2D" uid="uid://v3wxnk7gcmmc" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_19.png" id="109_rkiki"]
+[ext_resource type="Texture2D" uid="uid://d1wk1yft1geb8" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_20.png" id="110_tyys0"]
+[ext_resource type="Texture2D" uid="uid://bb8r6ghroaeh3" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_21.png" id="111_dbl2b"]
+[ext_resource type="Texture2D" uid="uid://dde0tx6vjju1p" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_22.png" id="112_21jn5"]
+[ext_resource type="Texture2D" uid="uid://2uw5ttrqlg71" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Run_Sword/enemy_skeleton_run_sword_23.png" id="113_q0coo"]
+[ext_resource type="Texture2D" uid="uid://bmfltymei58te" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_00.png" id="114_ai7a4"]
+[ext_resource type="Texture2D" uid="uid://dky5mc4i6817q" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_01.png" id="115_pcpok"]
+[ext_resource type="Texture2D" uid="uid://b6f57knx22jjy" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_02.png" id="116_s7wo4"]
+[ext_resource type="Texture2D" uid="uid://106fl83m68d8" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_03.png" id="117_b21fe"]
+[ext_resource type="Texture2D" uid="uid://dc0awc0xi4hdq" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_04.png" id="118_ee23k"]
+[ext_resource type="Texture2D" uid="uid://l7i74hfwnqqc" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_05.png" id="119_0ypoa"]
+[ext_resource type="Texture2D" uid="uid://cdqf6d3qvmf00" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_06.png" id="120_t8wui"]
+[ext_resource type="Texture2D" uid="uid://dno0js5262a2p" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_07.png" id="121_5ivsj"]
+[ext_resource type="Texture2D" uid="uid://bsjtdstg2k2qp" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_08.png" id="122_qlr17"]
+[ext_resource type="Texture2D" uid="uid://bd2n3x6b1magv" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_09.png" id="123_y7vff"]
+[ext_resource type="Texture2D" uid="uid://csv678ix1ixg2" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_10.png" id="124_c73d6"]
+[ext_resource type="Texture2D" uid="uid://dnqijgyipq4dn" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_11.png" id="125_55haa"]
+[ext_resource type="Texture2D" uid="uid://b1stf5dumx5x8" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_12.png" id="126_bloju"]
+[ext_resource type="Texture2D" uid="uid://buscslfi3ph82" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_13.png" id="127_n8epr"]
+[ext_resource type="Texture2D" uid="uid://blusn5eohcl0n" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_14.png" id="128_tg0jb"]
+[ext_resource type="Texture2D" uid="uid://c0ps37xl1n4q7" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_15.png" id="129_vsbcl"]
+[ext_resource type="Texture2D" uid="uid://f6odhlepymbn" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_16.png" id="130_t67vg"]
+[ext_resource type="Texture2D" uid="uid://db4s5x2hi8dec" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_17.png" id="131_fean5"]
+[ext_resource type="Texture2D" uid="uid://bktm6wc8aucwa" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_18.png" id="132_uu4tw"]
+[ext_resource type="Texture2D" uid="uid://dlh0o4aynyjny" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_19.png" id="133_6fkri"]
+[ext_resource type="Texture2D" uid="uid://7q53nc4k51d4" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_20.png" id="134_aievn"]
+[ext_resource type="Texture2D" uid="uid://c7sfsf4etaqu6" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_21.png" id="135_iu86j"]
+[ext_resource type="Texture2D" uid="uid://mmevtd81onxc" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_22.png" id="136_7kql1"]
+[ext_resource type="Texture2D" uid="uid://scl7etm534nd" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_23.png" id="137_lput0"]
+[ext_resource type="Texture2D" uid="uid://g7bkqdcf3q2y" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_24.png" id="138_6vh5w"]
+[ext_resource type="Texture2D" uid="uid://dss8oultss0ra" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_25.png" id="139_i81i0"]
+[ext_resource type="Texture2D" uid="uid://d0fj320md05s3" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_26.png" id="140_mug6l"]
+[ext_resource type="Texture2D" uid="uid://xhfxn0tmvrtg" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_27.png" id="141_ot52r"]
+[ext_resource type="Texture2D" uid="uid://cd0aoty4itr7s" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_28.png" id="142_tjhrx"]
+[ext_resource type="Texture2D" uid="uid://d3o28jmd3yuwx" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_29.png" id="143_0maqo"]
+[ext_resource type="Texture2D" uid="uid://bymy2rntk5it8" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_30.png" id="144_fe71d"]
+[ext_resource type="Texture2D" uid="uid://dmpxyf48bdip" path="res://Assets/Enemies/Skeleton/Skeleton Sword/Walk_Sword/enemy_skeleton_walk_sword_31.png" id="145_xpb0h"]
+[ext_resource type="AudioStream" uid="uid://dx03254446fxp" path="res://Assets/Audio/SFX/Character/SFX_Skeleton_Die1.wav" id="147_5w0os"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w4kvm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cp0w6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_kyyjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_isild")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_urykx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jxhlc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xgnre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_j2hoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rlm02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vgjx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_p0081")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2me5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_aum4x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vmhje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_k2rmk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_h4s5l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_avw8k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_nhryj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tvehc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_pf7ck")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_g1rq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_5gtys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_24uwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_2v6wd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ewcjp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_tij85")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_utsi0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_48kg7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_mhpv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_trpam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_tvmus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_isdxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_iy8d7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_y4af6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_13o8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_i8e5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_1c8kj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_xxuk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_a5bfp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_yadar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_2s3f6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_q8yfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_n0lbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_pe8ag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_f750o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_7u5vo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ks35b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_lpbcx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_n27fv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_cfd6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_0p0js")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_35yju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_f13bo")
+}],
+"loop": false,
+"name": &"die",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("53_58gat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_jbvp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_lkpk6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_tr6re")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_behc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_dgb5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_t3twj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_qla2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_v63xu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_3mpcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_tnhfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_6hwn2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_v5uqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_j4ede")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_457mp")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("68_u6g3l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_myv4w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_844dc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_f2ugi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_3rgda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_v4wbm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_jh7h5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_8idk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_jbayq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_jjfqb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_llmxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_8wlbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_jpihb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_holc2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_nq1am")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_jkol7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_w8wqf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_28my8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_x7v28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_ulcvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_jhp2o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_lhdn2")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("90_14wkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_03ct6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_e6583")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_khcek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_gk8um")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_3kjrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_iwiux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_rgt03")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_ricp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_k4pi2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_ku6eh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_vqm66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_wq875")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_rxli3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_qa5yl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_l35li")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_woqki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_v5mah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_qqvfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_rkiki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_tyys0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_dbl2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_21jn5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_q0coo")
+}],
+"loop": true,
+"name": &"run",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("114_ai7a4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_pcpok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_s7wo4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_b21fe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_ee23k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_0ypoa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_t8wui")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_5ivsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_qlr17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_y7vff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_c73d6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_55haa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_bloju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_n8epr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_tg0jb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_vsbcl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_t67vg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_fean5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_uu4tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_6fkri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_aievn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_iu86j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_7kql1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_lput0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_6vh5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_i81i0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_mug6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_ot52r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_tjhrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_0maqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_fe71d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_xpb0h")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 23.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_51s1c"]
+radius = 51.0
+height = 194.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lx5pc"]
+radius = 53.0
+height = 202.0
+
+[node name="EnemySkeleton" type="CharacterBody2D" groups=["Enemy"]]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_t3d4t")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -100)
+sprite_frames = SubResource("SpriteFrames_w4kvm")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-26, -101)
+shape = SubResource("CapsuleShape2D_51s1c")
+
+[node name="Hurtbox" type="Area2D" parent="." groups=["Enemy"]]
+collision_layer = 4
+collision_mask = 33
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0, -98)
+shape = SubResource("CapsuleShape2D_lx5pc")
+debug_color = Color(0.937515, 0.144489, 0.513071, 0.42)
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("147_5w0os")
+
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

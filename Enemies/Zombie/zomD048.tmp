@@ -1,0 +1,196 @@
+[gd_scene load_steps=27 format=3 uid="uid://dpr7rywgmth1h"]
+
+[ext_resource type="Script" path="res://Enemies/Zombie/zombie.gd" id="1_1xn3p"]
+[ext_resource type="Texture2D" uid="uid://tg6felvupiyp" path="res://Assets/Enemies/Zombie/character_zombie_attack0.png" id="1_a3y8o"]
+[ext_resource type="Texture2D" uid="uid://bxg8mrlwdw643" path="res://Assets/Enemies/Zombie/character_zombie_attack1.png" id="2_jkhwy"]
+[ext_resource type="Texture2D" uid="uid://buqlvldlu0io4" path="res://Assets/Enemies/Zombie/character_zombie_attack2.png" id="3_dwv2l"]
+[ext_resource type="Texture2D" uid="uid://bd2b1dpmi2086" path="res://Assets/Enemies/Zombie/character_zombie_idle.png" id="4_kix6j"]
+[ext_resource type="Texture2D" uid="uid://dvr02xr3aj1x5" path="res://Assets/Enemies/Zombie/character_zombie_hit.png" id="5_30ta1"]
+[ext_resource type="Texture2D" uid="uid://c047rkwn0m0uy" path="res://Assets/Enemies/Zombie/character_zombie_idle_strip5.png" id="6_bujrj"]
+[ext_resource type="Texture2D" uid="uid://cx8cqgg4uc86p" path="res://Assets/Enemies/Zombie/character_zombie_walk0.png" id="7_awur3"]
+[ext_resource type="Texture2D" uid="uid://bko2ukvqp1uws" path="res://Assets/Enemies/Zombie/character_zombie_walk1.png" id="8_s6bwk"]
+[ext_resource type="Texture2D" uid="uid://b53kjjkpvoicx" path="res://Assets/Enemies/Zombie/character_zombie_walk2.png" id="9_wy0a0"]
+[ext_resource type="Texture2D" uid="uid://lqckv6on2age" path="res://Assets/Enemies/Zombie/character_zombie_walk3.png" id="10_3weu0"]
+[ext_resource type="Texture2D" uid="uid://bybxy00od4a3x" path="res://Assets/Enemies/Zombie/character_zombie_walk4.png" id="11_sdlq1"]
+[ext_resource type="Texture2D" uid="uid://0u7l227ab0rh" path="res://Assets/Enemies/Zombie/character_zombie_walk5.png" id="12_lgohu"]
+[ext_resource type="Texture2D" uid="uid://bbmit76gq8xim" path="res://Assets/Enemies/Zombie/character_zombie_walk6.png" id="13_vf2bl"]
+[ext_resource type="Texture2D" uid="uid://blsxjpgudytd" path="res://Assets/Enemies/Zombie/character_zombie_walk7.png" id="14_edcoh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j07j4"]
+atlas = ExtResource("6_bujrj")
+region = Rect2(0, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6af31"]
+atlas = ExtResource("6_bujrj")
+region = Rect2(192, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uo20"]
+atlas = ExtResource("6_bujrj")
+region = Rect2(384, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v3qri"]
+atlas = ExtResource("6_bujrj")
+region = Rect2(576, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5x43"]
+atlas = ExtResource("6_bujrj")
+region = Rect2(768, 0, 192, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4nuww"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_a3y8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jkhwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_dwv2l")
+}],
+"loop": true,
+"name": &"attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_kix6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_30ta1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kix6j")
+}],
+"loop": false,
+"name": &"hit",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j07j4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6af31")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5uo20")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v3qri")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5x43")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_awur3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_s6bwk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wy0a0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3weu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_sdlq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_lgohu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vf2bl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_edcoh")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gqaal"]
+radius = 43.0
+height = 196.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nws54"]
+radius = 53.0
+height = 202.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vwixh"]
+size = Vector2(467, 195)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vxkc7"]
+bg_color = Color(0.752941, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q03nm"]
+bg_color = Color(0.620041, 0.620041, 0, 1)
+
+[node name="Zombie" type="CharacterBody2D"]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_1xn3p")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -127)
+sprite_frames = SubResource("SpriteFrames_4nuww")
+animation = &"hit"
+autoplay = "idle"
+frame = 2
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -97)
+shape = SubResource("CapsuleShape2D_gqaal")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[node name="Hurtbox" type="Area2D" parent="." groups=["Enemy"]]
+collision_layer = 4
+collision_mask = 33
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0, -98)
+shape = SubResource("CapsuleShape2D_nws54")
+debug_color = Color(0.937515, 0.144489, 0.513071, 0.42)
+
+[node name="AttackArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
+position = Vector2(1, -99.5)
+shape = SubResource("RectangleShape2D_vwixh")
+debug_color = Color(0.633605, 0.527435, 0.0518837, 0.42)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HealthProgressBar" type="ProgressBar" parent="Control"]
+custom_minimum_size = Vector2(100, 20)
+layout_mode = 0
+offset_left = -49.0
+offset_top = -229.0
+offset_right = 51.0
+offset_bottom = -209.0
+theme_override_styles/background = SubResource("StyleBoxFlat_vxkc7")
+theme_override_styles/fill = SubResource("StyleBoxFlat_q03nm")
+step = 1.0
+value = 100.0
+show_percentage = false
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]
+[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
+[connection signal="body_exited" from="AttackArea" to="." method="_on_attack_area_body_exited"]

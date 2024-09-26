@@ -1,0 +1,85 @@
+[gd_scene load_steps=7 format=3 uid="uid://dd7brcwd2pcjo"]
+
+[ext_resource type="Script" path="res://UI/main_menu.gd" id="1_8rf5g"]
+[ext_resource type="Texture2D" uid="uid://c7sicjndv4nrk" path="res://Assets/Backgrounds/Level1 Screenshot.png" id="2_gadu3"]
+[ext_resource type="Theme" uid="uid://c2mg85003216m" path="res://UI/main_menu.tres" id="3_y3eax"]
+[ext_resource type="FontFile" uid="uid://bupbbbh1ab1xg" path="res://Assets/UI/GravityRegular5.ttf" id="4_6hvbv"]
+[ext_resource type="AudioStream" uid="uid://cesbd0rp2xeq6" path="res://Assets/Audio/Music/Lose1.mp3" id="5_yqgs0"]
+
+[sub_resource type="Theme" id="Theme_a0sdt"]
+Button/styles/normal = null
+
+[node name="GameOverDied" type="CanvasLayer"]
+process_mode = 3
+layer = 2
+script = ExtResource("1_8rf5g")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0.560784, 0.752941, 0.4, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_gadu3")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.0
+offset_top = -27.0
+offset_right = 38.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer"]
+layout_mode = 2
+theme = ExtResource("3_y3eax")
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="PlayButton" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_a0sdt")
+text = "Play
+"
+
+[node name="ExitButton" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Exit
+"
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -254.5
+offset_top = 308.0
+offset_right = 271.5
+offset_bottom = 423.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0.847059, 0.968627, 1)
+theme_override_fonts/font = ExtResource("4_6hvbv")
+theme_override_font_sizes/font_size = 56
+text = "You Died!
+Game Over
+"
+horizontal_alignment = 1
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_yqgs0")
+
+[connection signal="pressed" from="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/ExitButton" to="." method="_on_exit_button_pressed"]

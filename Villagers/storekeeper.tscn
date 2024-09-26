@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=3 uid="uid://bnj2w2tsfisl3"]
+
+[ext_resource type="Script" path="res://Villagers/storekeeper.gd" id="1_0u88q"]
+[ext_resource type="Texture2D" uid="uid://b4da2pdyeesok" path="res://Assets/Villagers/character_malePerson_idle12_strip7.png" id="1_tu4c4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3nlpl"]
+atlas = ExtResource("1_tu4c4")
+region = Rect2(0, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pak0b"]
+atlas = ExtResource("1_tu4c4")
+region = Rect2(192, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nda6"]
+atlas = ExtResource("1_tu4c4")
+region = Rect2(384, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a055k"]
+atlas = ExtResource("1_tu4c4")
+region = Rect2(576, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pl0tg"]
+atlas = ExtResource("1_tu4c4")
+region = Rect2(768, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_edfsi"]
+atlas = ExtResource("1_tu4c4")
+region = Rect2(960, 0, 192, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dkg0v"]
+atlas = ExtResource("1_tu4c4")
+region = Rect2(1152, 0, 192, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x8cho"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3nlpl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pak0b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nda6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a055k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pl0tg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_edfsi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dkg0v")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jvolw"]
+radius = 60.0
+height = 190.0
+
+[node name="Storekeeper" type="CharacterBody2D"]
+collision_mask = 2
+script = ExtResource("1_0u88q")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -128)
+sprite_frames = SubResource("SpriteFrames_x8cho")
+animation = &"idle"
+frame_progress = 0.0700196
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -96)
+shape = SubResource("CapsuleShape2D_jvolw")
+debug_color = Color(0.803099, 0.416319, 0.0962075, 0.42)

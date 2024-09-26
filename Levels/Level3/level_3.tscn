@@ -1,0 +1,586 @@
+[gd_scene load_steps=45 format=4 uid="uid://dr536jpjrqm7d"]
+
+[ext_resource type="Script" path="res://Levels/Level3/level_3.gd" id="1_q756h"]
+[ext_resource type="Texture2D" uid="uid://berboujjbustm" path="res://Assets/Backgrounds/Cave_Layer4.png" id="1_tpdmy"]
+[ext_resource type="Texture2D" uid="uid://cdnutx64urwgf" path="res://Assets/Backgrounds/Cave_Layer3.png" id="2_l0y18"]
+[ext_resource type="Texture2D" uid="uid://bl0mxx7hmn07f" path="res://Assets/Backgrounds/Cave_Layer2.png" id="3_tg2so"]
+[ext_resource type="Texture2D" uid="uid://cdkv1rwe8tynm" path="res://Assets/Backgrounds/Cave_Layer1.png" id="4_1pyq1"]
+[ext_resource type="PackedScene" uid="uid://dcvn1qkx07gyh" path="res://UI/hud_2.tscn" id="5_v5qr7"]
+[ext_resource type="TileSet" uid="uid://b5i1eald12bbh" path="res://Levels/Level3/level_3.tres" id="6_6x5cp"]
+[ext_resource type="PackedScene" uid="uid://c5j442maknynj" path="res://Player/knight.tscn" id="7_it0t6"]
+[ext_resource type="Script" path="res://Levels/Test Levels/knight_camera_2d.gd" id="8_jdma0"]
+[ext_resource type="PackedScene" uid="uid://cpt6uhtvg1tym" path="res://Enemies/Spider/enemy_spider.tscn" id="8_ki6mj"]
+[ext_resource type="PackedScene" uid="uid://b2go2pbmrcfdl" path="res://Enemies/Bat/enemy_bat.tscn" id="9_1q033"]
+[ext_resource type="PackedScene" uid="uid://cg1sot7bmbi75" path="res://Levels/Level1/Animated Props/treasure_chest.tscn" id="10_5cj3u"]
+[ext_resource type="PackedScene" uid="uid://1hevbvlvlh3t" path="res://Pickups/Coin/coin.tscn" id="10_g6brq"]
+[ext_resource type="Texture2D" uid="uid://cujeoy21ugmen" path="res://Assets/Buildings/Window_Stone_Dark_Shadow.png" id="11_12hp8"]
+[ext_resource type="Texture2D" uid="uid://c3270lbwo1wfm" path="res://Assets/Buildings/Wall_Stone1.png" id="12_61362"]
+[ext_resource type="Texture2D" uid="uid://d1o4a23fsvcm7" path="res://Assets/Buildings/Wall_Stone_Right.png" id="13_shjtc"]
+[ext_resource type="Texture2D" uid="uid://cgmos37mkk1gu" path="res://Assets/Buildings/Doorway_Stone.png" id="14_3kfe2"]
+[ext_resource type="PackedScene" uid="uid://duaxax84iukca" path="res://Door/door.tscn" id="15_q80cp"]
+[ext_resource type="Texture2D" uid="uid://djl8hp4u2g2rl" path="res://Assets/Buildings/Door.png" id="15_xrvlp"]
+[ext_resource type="Texture2D" uid="uid://dn1rxn0ohjhoc" path="res://Assets/Buildings/Wall_Stone_Left.png" id="16_xkjpo"]
+[ext_resource type="Texture2D" uid="uid://xwqjj22tleya" path="res://Assets/Buildings/Wall_Stone2.png" id="17_i6xiw"]
+[ext_resource type="Texture2D" uid="uid://xl44h2s70uc3" path="res://Assets/Buildings/Wall_Stone3.png" id="18_rlnko"]
+[ext_resource type="Texture2D" uid="uid://drq32pcr3busu" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Anvil.png" id="19_l471m"]
+[ext_resource type="Texture2D" uid="uid://b11014x2s0ywx" path="res://Assets/Buildings/Door_Cave_Dark.png" id="20_xfg2b"]
+[ext_resource type="Texture2D" uid="uid://dtdsgpyof06kp" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Rock_Large2_Dark.png" id="21_1300f"]
+[ext_resource type="Texture2D" uid="uid://frymbrqih7xd" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Rock_Large3_Dark.png" id="22_runut"]
+[ext_resource type="Texture2D" uid="uid://c4rcwcx1m2btl" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Rock_Large1.png" id="23_mfhro"]
+[ext_resource type="Texture2D" uid="uid://dqulnwqxn2lnl" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Rock_Small3.png" id="24_vwxeb"]
+[ext_resource type="Texture2D" uid="uid://svw078anwvuj" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Mushroom2.png" id="25_7rf34"]
+[ext_resource type="Texture2D" uid="uid://c8bio1uced4ro" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Mushroom5.png" id="26_1l4pw"]
+[ext_resource type="Texture2D" uid="uid://c8h6vi2gaj5fb" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Mushroom3.png" id="27_jo81y"]
+[ext_resource type="Texture2D" uid="uid://dppd3vsx62nbd" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Mushroom4.png" id="28_vaqlq"]
+[ext_resource type="Texture2D" uid="uid://bnrwmn86ederr" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Mushroom1.png" id="29_7g4ox"]
+[ext_resource type="Texture2D" uid="uid://pt5qbbc2sheb" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Tracks_Left.png" id="30_76r3y"]
+[ext_resource type="Texture2D" uid="uid://by4ic87h2gaby" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Tracks_Mid.png" id="31_5ugjh"]
+[ext_resource type="Texture2D" uid="uid://brnnmaup1aleb" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Tracks_Right.png" id="32_xltn5"]
+[ext_resource type="Texture2D" uid="uid://msvxrn258sav" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Signpost.png" id="33_ubbkc"]
+[ext_resource type="Texture2D" uid="uid://c0mvve6aynyca" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Treasure_Gold.png" id="34_3xkiq"]
+[ext_resource type="Texture2D" uid="uid://dc0kx07ietpt7" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Minecart_Full.png" id="35_v61rj"]
+[ext_resource type="Texture2D" uid="uid://dtyacv31f2t6m" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Minecart_Empty.png" id="36_abubu"]
+[ext_resource type="Texture2D" uid="uid://cxwr5clkrs0kh" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Crystal1.png" id="40_igebi"]
+[ext_resource type="Texture2D" uid="uid://ckcqa217gbbk4" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Crystal2.png" id="41_d5jh7"]
+[ext_resource type="Texture2D" uid="uid://bartf1hlowy2f" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Crystal3.png" id="42_pe35c"]
+[ext_resource type="AudioStream" uid="uid://b7om7sbl37xn6" path="res://Assets/Audio/SFX/Ambient/Amb_Cave1.wav" id="44_j24gs"]
+
+[node name="Level3" type="Node2D"]
+script = ExtResource("1_q756h")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+offset = Vector2(0, -1080)
+transform = Transform2D(1, 0, 0, 1, 0, -1080)
+
+[node name="BackgroundParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(3840, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/BackgroundParallaxLayer"]
+texture = ExtResource("1_tpdmy")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/BackgroundParallaxLayer"]
+position = Vector2(1920, 0)
+texture = ExtResource("1_tpdmy")
+centered = false
+
+[node name="MiddleParallaxLayer1" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.95, 1)
+motion_mirroring = Vector2(4608, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/MiddleParallaxLayer1"]
+texture = ExtResource("2_l0y18")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/MiddleParallaxLayer1"]
+position = Vector2(2304, 0)
+texture = ExtResource("2_l0y18")
+centered = false
+
+[node name="MiddleParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(4608, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/MiddleParallaxLayer2"]
+texture = ExtResource("3_tg2so")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/MiddleParallaxLayer2"]
+position = Vector2(2304, 0)
+texture = ExtResource("3_tg2so")
+centered = false
+
+[node name="MiddleParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.85, 1)
+motion_mirroring = Vector2(4608, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/MiddleParallaxLayer3"]
+texture = ExtResource("4_1pyq1")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/MiddleParallaxLayer3"]
+position = Vector2(2304, 0)
+texture = ExtResource("4_1pyq1")
+centered = false
+
+[node name="HUD2" parent="." instance=ExtResource("5_v5qr7")]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAAAAAAAQADAAQAAAABAAAAAQAFAAIAAAACAAAAAQAFAAIAAAADAAAAAQAFAAIAAAAEAAAAAQAFAAIAAAAFAAAAAQAFAAIAAAAGAAAAAQAFAAIAAAAHAAAAAQAFAAIAAAAIAAAAAQAFAAIAAAAJAAAAAQAFAAIAAAAKAAAAAQAFAAIAAAALAAAAAQAFAAIAAAD///v/AgAAAAAAAAD///z/AgAAAAAAAAD///3/AgAAAAAAAAD///7/AgAAAAAAAAD/////AgAAAAAAAAAMAAAAAQAFAAIAAAANAAAAAQAFAAIAAAAOAAAAAQAFAAIAAAAPAAAAAQAFAAIAAAAQAAAAAQAFAAIAAAARAAAAAQAFAAIAAAASAAAAAQAFAAIAAAATAAAAAQAFAAIAAAAUAAAAAQAFAAIAAAAVAAAAAQAFAAIAAAAWAAAAAQAFAAIAAAAXAAAAAQAFAAIAAAAYAAAAAQAFAAIAAAAZAAAAAQAFAAIAAAAaAAAAAQAFAAIAAAAbAAAAAQAFAAIAAAAcAAAAAQAFAAIAAAAdAAAAAQAFAAIAAAAeAAAAAQAFAAIAAAAfAAAAAQAFAAIAAAAgAAAAAQAFAAIAAAAhAAAAAQAFAAIAAAAiAAAAAQAFAAIAAAAjAAAAAQAFAAIAAAAkAAAAAQAFAAIAAAAlAAAAAQAFAAIAAAAmAAAAAQAFAAIAAAAnAAAAAQAFAAIAAAAoAAAAAQAFAAIAAAApAAAAAQAFAAIAAAAqAAAAAQAFAAIAAAArAAAAAQAFAAIAAAAsAAAAAQAFAAIAAAAtAAAAAQACAAAAAAAuAAAAAQABAAAAAAAvAAAAAQABAAAAAAAwAAAAAQADAAAAAAAxAAAAAQAFAAIAAAAyAAAAAQAFAAIAAAAzAAAAAQAFAAIAAAA0AAAAAQAFAAIAAAA1AAAAAQAFAAIAAAA2AAAAAQAFAAIAAAA3AAAAAQAFAAIAAAA4AAAAAQAFAAQAAAA5APv/AgAAAAAAAAA5APz/AgAAAAAAAAA5AP3/AgAAAAAAAAA5AP7/AgAAAAAAAAA5AP//AgAAAAAAAAAAAAEAAQABAAIAAAAAAAIAAQABAAIAAAAAAAMAAQABAAIAAAAAAAQAAQABAAIAAAAAAAUAAQABAAIAAAAAAAYAAQABAAIAAAAAAAcAAQABAAUAAAABAAcAAQAFAAMAAAACAAcAAQAFAAMAAAADAAcAAQAFAAMAAAAEAAcAAQAFAAMAAAAFAAcAAQAHAAQAAAAMAAQAAQAFAAMAAAABAAEAAQABAAAAAAACAAEAAQABAAAAAAADAAEAAQABAAAAAAAEAAEAAQABAAAAAAAFAAEAAQABAAAAAAAGAAEAAQABAAAAAAAHAAEAAQABAAAAAAAIAAEAAQABAAAAAAAJAAEAAQABAAAAAAAKAAEAAQABAAAAAAALAAEAAQABAAAAAAAMAAEAAQABAAAAAAANAAEAAQABAAAAAAAOAAEAAQABAAAAAAAPAAEAAQABAAAAAAAQAAEAAQABAAAAAAARAAEAAQABAAAAAAASAAEAAQABAAAAAAATAAEAAQABAAAAAAABAAIAAQABAAAAAAACAAIAAQABAAAAAAADAAIAAQABAAAAAAAEAAIAAQABAAAAAAAFAAIAAQABAAAAAAAGAAIAAQABAAAAAAAHAAIAAQABAAAAAAAIAAIAAQABAAAAAAAJAAIAAQABAAAAAAAKAAIAAQABAAAAAAALAAIAAQABAAAAAAAMAAIAAQABAAAAAAANAAIAAQABAAAAAAAOAAIAAQABAAAAAAAPAAIAAQABAAAAAAAQAAIAAQABAAAAAAARAAIAAQABAAAAAAASAAIAAQABAAAAAAATAAIAAQABAAAAAAABAAMAAQABAAAAAAABAAQAAQABAAAAAAABAAUAAQABAAAAAAABAAYAAQABAAAAAAACAAMAAQABAAAAAAACAAUAAQABAAAAAAACAAYAAQABAAAAAAADAAMAAQABAAAAAAADAAQAAQAFAAIAAAADAAUAAQABAAAAAAADAAYAAQABAAAAAAAEAAMAAQABAAAAAAAEAAQAAQAFAAIAAAAEAAUAAQABAAAAAAAEAAYAAQABAAAAAAAFAAMAAQABAAAAAAAFAAQAAQAGAAAAAAAFAAUAAQABAAMAAAAFAAYAAQABAAMAAAAGAAMAAQABAAAAAAAGAAQAAQAFAAMAAAAHAAMAAQABAAAAAAAHAAQAAQAFAAMAAAAIAAMAAQABAAAAAAAIAAQAAQAFAAMAAAAJAAMAAQABAAAAAAAJAAQAAQAFAAMAAAAKAAMAAQABAAAAAAAKAAQAAQAFAAMAAAALAAMAAQABAAAAAAALAAQAAQAFAAMAAAAMAAMAAQABAAAAAAANAAMAAQABAAAAAAANAAQAAQAFAAMAAAAOAAMAAQABAAAAAAAOAAQAAQAFAAMAAAAPAAMAAQABAAAAAAAPAAQAAQABAAEAAAAPAAUAAQABAAIAAAAPAAYAAQABAAIAAAAQAAMAAQABAAAAAAAQAAQAAQABAAAAAAAQAAUAAQABAAAAAAAQAAYAAQABAAAAAAARAAMAAQABAAAAAAARAAQAAQABAAAAAAARAAUAAQABAAAAAAARAAYAAQABAAAAAAASAAMAAQABAAAAAAASAAQAAQADAAAAAAASAAUAAQABAAAAAAASAAYAAQABAAAAAAATAAMAAQABAAAAAAATAAQAAQAFAAIAAAATAAUAAQABAAAAAAATAAYAAQABAAAAAAAUAAEAAQABAAAAAAAUAAIAAQABAAAAAAAUAAMAAQABAAAAAAAUAAUAAQABAAAAAAAUAAYAAQABAAAAAAAVAAEAAQABAAAAAAAVAAIAAQABAAAAAAAVAAMAAQABAAAAAAAVAAUAAQABAAAAAAAVAAYAAQABAAAAAAAWAAEAAQABAAAAAAAWAAIAAQABAAAAAAAWAAMAAQABAAAAAAAWAAUAAQABAAAAAAAWAAYAAQABAAAAAAAXAAEAAQABAAAAAAAXAAIAAQABAAAAAAAXAAMAAQABAAAAAAAXAAQAAQACAAAAAAAXAAUAAQABAAAAAAAXAAYAAQABAAAAAAAYAAEAAQABAAAAAAAYAAIAAQABAAAAAAAYAAMAAQABAAAAAAAYAAQAAQABAAAAAAAYAAUAAQABAAAAAAAYAAYAAQABAAAAAAAZAAEAAQABAAAAAAAZAAIAAQABAAAAAAAZAAMAAQABAAAAAAAZAAQAAQABAAAAAAAZAAUAAQABAAAAAAAZAAYAAQABAAAAAAAaAAEAAQABAAAAAAAaAAIAAQABAAAAAAAaAAMAAQABAAEAAGAaAAQAAQABAAMAAAAaAAUAAQABAAMAAAAaAAYAAQABAAMAAAAbAAEAAQABAAAAAAAbAAIAAQABAAAAAAAbAAMAAQAFAAMAAAAcAAEAAQABAAAAAAAcAAIAAQABAAAAAAAcAAMAAQAFAAMAAAAdAAEAAQABAAAAAAAdAAIAAQABAAAAAAAdAAMAAQAFAAMAAAAeAAEAAQABAAAAAAAeAAIAAQABAAAAAAAeAAMAAQAFAAMAAAAfAAEAAQABAAAAAAAfAAIAAQABAAAAAAAfAAMAAQAFAAMAAAAgAAEAAQABAAAAAAAgAAIAAQABAAAAAAAgAAMAAQABAAEAAAAgAAQAAQABAAIAAAAgAAUAAQABAAIAAAAgAAYAAQABAAIAAAAhAAEAAQABAAAAAAAhAAIAAQABAAAAAAAhAAMAAQABAAAAAAAhAAQAAQABAAAAAAAhAAUAAQABAAAAAAAhAAYAAQABAAAAAAAiAAEAAQABAAAAAAAiAAIAAQABAAAAAAAiAAMAAQABAAAAAAAiAAQAAQABAAAAAAAiAAUAAQABAAAAAAAiAAYAAQABAAAAAAAjAAEAAQABAAAAAAAjAAIAAQABAAAAAAAjAAMAAQABAAAAAAAjAAQAAQADAAAAAAAjAAUAAQABAAAAAAAjAAYAAQABAAAAAAAkAAEAAQABAAAAAAAkAAIAAQABAAAAAAAkAAMAAQABAAAAAAAkAAUAAQABAAAAAAAkAAYAAQABAAAAAAAlAAEAAQABAAAAAAAlAAIAAQABAAAAAAAlAAMAAQABAAAAAAAlAAQAAQAEAAAAAAAlAAUAAQABAAAAAAAlAAYAAQABAAAAAAAmAAEAAQABAAAAAAAmAAIAAQABAAAAAAAmAAMAAQABAAAAAAAmAAQAAQAEAAAAAAAmAAUAAQABAAAAAAAmAAYAAQABAAAAAAAnAAEAAQABAAAAAAAnAAIAAQABAAAAAAAnAAMAAQABAAAAAAAnAAQAAQACAAAAAAAnAAUAAQABAAAAAAAnAAYAAQABAAAAAAAoAAEAAQABAAAAAAAoAAIAAQABAAAAAAAoAAMAAQABAAAAAAAoAAQAAQABAAAAAAAoAAUAAQABAAAAAAAoAAYAAQABAAAAAAApAAEAAQABAAAAAAApAAIAAQABAAAAAAApAAMAAQABAAAAAAApAAQAAQABAAAAAAApAAUAAQADAAAAAAApAAYAAQABAAAAAAAqAAEAAQABAAAAAAAqAAIAAQABAAAAAAAqAAMAAQABAAAAAAAqAAQAAQABAAAAAAAqAAUAAQACAAAAAAAqAAYAAQABAAAAAAArAAEAAQABAAAAAAArAAIAAQABAAAAAAArAAMAAQABAAAAAAArAAQAAQADAAAAAAArAAYAAQABAAAAAAAsAAEAAQABAAAAAAAsAAIAAQABAAAAAAAsAAMAAQABAAAAAAAsAAQAAQACAAAAAAAsAAUAAQABAAAAAAAsAAYAAQABAAAAAAAtAAEAAQABAAAAAAAtAAIAAQABAAAAAAAtAAMAAQADAAAAAAAtAAQAAQABAAAAAAAtAAUAAQABAAAAAAAtAAYAAQABAAAAAAAuAAEAAQABAAAAAAAuAAIAAQABAAAAAAAuAAMAAQACAAAAAAAuAAQAAQABAAAAAAAuAAUAAQABAAAAAAAuAAYAAQABAAAAAAAvAAEAAQABAAAAAAAvAAIAAQADAAAAAAAvAAMAAQABAAAAAAAvAAQAAQABAAAAAAAvAAUAAQABAAAAAAAvAAYAAQABAAAAAAAwAAEAAQABAAAAAAAwAAIAAQACAAAAAAAwAAMAAQABAAAAAAAwAAQAAQABAAAAAAAwAAUAAQABAAAAAAAwAAYAAQABAAAAAAAxAAEAAQABAAAAAAAxAAIAAQABAAAAAAAxAAMAAQABAAAAAAAxAAQAAQABAAAAAAAxAAUAAQABAAAAAAAxAAYAAQABAAAAAAAyAAEAAQABAAAAAAAyAAIAAQABAAAAAAAyAAMAAQABAAAAAAAyAAQAAQABAAAAAAAyAAUAAQABAAAAAAAyAAYAAQABAAAAAAAzAAEAAQABAAAAAAAzAAIAAQABAAAAAAAzAAMAAQADAAAAAAAzAAQAAQABAAAAAAAzAAUAAQADAAAAAAAzAAYAAQABAAAAAAA0AAEAAQABAAAAAAA0AAIAAQABAAAAAAA0AAMAAQAFAAIAAAA0AAQAAQABAAAAAAA0AAUAAQAFAAIAAAA0AAYAAQABAAAAAAA1AAEAAQABAAAAAAA1AAIAAQABAAAAAAA1AAMAAQAFAAIAAAA1AAQAAQABAAAAAAA1AAUAAQAFAAIAAAA1AAYAAQABAAAAAAA2AAEAAQABAAAAAAA2AAIAAQABAAAAAAA2AAMAAQAFAAIAAAA2AAQAAQABAAAAAAA2AAUAAQAFAAIAAAA2AAYAAQABAAAAAAA3AAEAAQABAAAAAAA3AAIAAQABAAAAAAA3AAMAAQAFAAIAAAA3AAQAAQABAAAAAAA3AAUAAQAFAAIAAAA3AAYAAQABAAAAAAA4AAEAAQABAAMAAAA4AAIAAQABAAMAAAA4AAMAAQADAAMAAAA4AAQAAQABAAMAAAA4AAUAAQADAAMAAAA4AAYAAQABAAMAAAA4AAcAAQAHAAQAAAAqAAcAAQAFAAMAAAArAAcAAQAFAAMAAAAsAAcAAQAFAAMAAAAtAAcAAQAFAAMAAAAuAAcAAQAFAAMAAAAvAAcAAQAFAAMAAAAwAAcAAQAFAAMAAAAxAAcAAQAFAAMAAAAyAAcAAQAFAAMAAAAzAAcAAQAFAAMAAAA0AAcAAQAFAAMAAAA1AAcAAQAFAAMAAAA2AAcAAQAFAAMAAAA3AAcAAQAFAAMAAAAPAAcAAQABAAUAAAAQAAcAAQAFAAMAAAARAAcAAQAFAAMAAAASAAcAAQAFAAMAAAATAAcAAQAFAAMAAAAUAAcAAQAFAAMAAAAVAAcAAQAFAAMAAAAWAAcAAQAFAAMAAAAXAAcAAQAFAAMAAAAYAAcAAQAFAAMAAAAZAAcAAQAFAAMAAAAaAAcAAQAHAAQAAAAgAAcAAQABAAUAAAAhAAcAAQAFAAMAAAAiAAcAAQAFAAMAAAAjAAcAAQAFAAMAAAAkAAcAAQAFAAMAAAAlAAcAAQAFAAMAAAAmAAcAAQAFAAMAAAAnAAcAAQAFAAMAAAAoAAcAAQAFAAMAAAApAAcAAQAFAAMAAAAUAAQAAQAFAAIAAAAVAAQAAQAFAAIAAAAWAAQAAQAFAAIAAAAkAAQAAQAEAAAAAAAAAPv/AgAAAAAAAAABAPv/AgAAAAAAAAACAPv/AgAAAAAAAAADAPv/AgAAAAAAAAAEAPv/AgAAAAAAAAAFAPv/AgAAAAAAAAAGAPv/AgAAAAAAAAAHAPv/AgAAAAAAAAAIAPv/AgAAAAAAAAAJAPv/AgAAAAAAAAAKAPv/AgAAAAAAAAALAPv/AgAAAAAAAAAMAPv/AgAAAAAAAAANAPv/AgAAAAAAAAAOAPv/AgAAAAAAAAAPAPv/AgAAAAAAAAAQAPv/AgAAAAAAAAARAPv/AgAAAAAAAAASAPv/AgAAAAAAAAATAPv/AgAAAAAAAAAUAPv/AgAAAAAAAAAVAPv/AgAAAAAAAAAWAPv/AgAAAAAAAAAXAPv/AgAAAAAAAAAYAPv/AgAAAAAAAAAZAPv/AgAAAAAAAAAaAPv/AgAAAAAAAAAbAPv/AgAAAAAAAAAcAPv/AgAAAAAAAAAdAPv/AgAAAAAAAAAeAPv/AgAAAAAAAAAfAPv/AgAAAAAAAAAgAPv/AgAAAAAAAAAhAPv/AgAAAAAAAAAiAPv/AgAAAAAAAAAjAPv/AgAAAAAAAAAkAPv/AgAAAAAAAAAlAPv/AgAAAAAAAAAmAPv/AgAAAAAAAAAnAPv/AgAAAAAAAAAoAPv/AgAAAAAAAAApAPv/AgAAAAAAAAAqAPv/AgAAAAAAAAArAPv/AgAAAAAAAAAsAPv/AgAAAAAAAAAtAPv/AgAAAAAAAAAuAPv/AgAAAAAAAAAvAPv/AgAAAAAAAAAwAPv/AgAAAAAAAAAxAPv/AgAAAAAAAAAyAPv/AgAAAAAAAAAzAPv/AgAAAAAAAAA0APv/AgAAAAAAAAA1APv/AgAAAAAAAAA2APv/AgAAAAAAAAA3APv/AgAAAAAAAAA4APv/AgAAAAAAAAACAAQAAQADAAAAAAArAAUAAQABAAAAAAAGAP7/AQACAAUAAAAHAP7/AQACAAQAAAAIAP7/AQACAAQAAAAJAP7/AQAGAAUAAAANAP3/AQACAAUAAAAOAP3/AQACAAQAAAAPAP3/AQACAAQAAAAQAP3/AQACAAQAAAARAP3/AQAGAAUAAAAVAP7/AQAHAAUAAAAdAP3/AQAHAAUAAAAmAP3/AQAHAAUAAAAsAP7/AQACAAUAAAAtAP7/AQACAAQAAAAuAP7/AQACAAQAAAAvAP7/AQACAAQAAAAwAP7/AQAGAAUAAAA=")
+tile_set = ExtResource("6_6x5cp")
+
+[node name="Spiders" type="Node2D" parent="."]
+
+[node name="EnemySpider" parent="Spiders" node_paths=PackedStringArray("patrol_points") instance=ExtResource("8_ki6mj")]
+position = Vector2(2403, 1038)
+patrol_points = NodePath("PatrolPoints")
+
+[node name="PatrolPoints" type="Node" parent="Spiders/EnemySpider"]
+
+[node name="Point1" type="Marker2D" parent="Spiders/EnemySpider/PatrolPoints"]
+position = Vector2(1625, 1028)
+
+[node name="Point2" type="Marker2D" parent="Spiders/EnemySpider/PatrolPoints"]
+position = Vector2(3778, 1012)
+
+[node name="EnemySpider2" parent="Spiders" node_paths=PackedStringArray("patrol_points") instance=ExtResource("8_ki6mj")]
+position = Vector2(5115, 1775)
+patrol_points = NodePath("PatrolPoints")
+
+[node name="PatrolPoints" type="Node" parent="Spiders/EnemySpider2"]
+
+[node name="Point1" type="Marker2D" parent="Spiders/EnemySpider2/PatrolPoints"]
+position = Vector2(4337, 1765)
+
+[node name="Point2" type="Marker2D" parent="Spiders/EnemySpider2/PatrolPoints"]
+position = Vector2(6490, 1749)
+
+[node name="EnemySpider3" parent="Spiders" node_paths=PackedStringArray("patrol_points") instance=ExtResource("8_ki6mj")]
+position = Vector2(9408, 1700)
+patrol_points = NodePath("PatrolPoints")
+
+[node name="PatrolPoints" type="Node" parent="Spiders/EnemySpider3"]
+
+[node name="Point1" type="Marker2D" parent="Spiders/EnemySpider3/PatrolPoints"]
+position = Vector2(8630, 1690)
+
+[node name="Point2" type="Marker2D" parent="Spiders/EnemySpider3/PatrolPoints"]
+position = Vector2(10783, 1674)
+
+[node name="EnemySpider4" parent="Spiders" node_paths=PackedStringArray("patrol_points") instance=ExtResource("8_ki6mj")]
+position = Vector2(12868, 1743)
+patrol_points = NodePath("PatrolPoints")
+
+[node name="PatrolPoints" type="Node" parent="Spiders/EnemySpider4"]
+
+[node name="Point1" type="Marker2D" parent="Spiders/EnemySpider4/PatrolPoints"]
+position = Vector2(12090, 1733)
+
+[node name="Point2" type="Marker2D" parent="Spiders/EnemySpider4/PatrolPoints"]
+position = Vector2(14243, 1717)
+
+[node name="Bats" type="Node2D" parent="."]
+
+[node name="EnemyBat" parent="Bats" node_paths=PackedStringArray("patrol_points") instance=ExtResource("9_1q033")]
+position = Vector2(9590, 731)
+patrol_points = NodePath("PatrolPoints")
+
+[node name="PatrolPoints" type="Node" parent="Bats/EnemyBat"]
+
+[node name="Point1" type="Marker2D" parent="Bats/EnemyBat/PatrolPoints"]
+position = Vector2(9050, 791)
+
+[node name="Point2" type="Marker2D" parent="Bats/EnemyBat/PatrolPoints"]
+position = Vector2(10148, 767)
+
+[node name="EnemyBat2" parent="Bats" node_paths=PackedStringArray("patrol_points") instance=ExtResource("9_1q033")]
+position = Vector2(5372, 763)
+patrol_points = NodePath("PatrolPoints")
+
+[node name="PatrolPoints" type="Node" parent="Bats/EnemyBat2"]
+
+[node name="Point1" type="Marker2D" parent="Bats/EnemyBat2/PatrolPoints"]
+position = Vector2(4832, 823)
+
+[node name="Point2" type="Marker2D" parent="Bats/EnemyBat2/PatrolPoints"]
+position = Vector2(5930, 799)
+
+[node name="Coins" type="Node2D" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(3568, 1008)
+
+[node name="Coin2" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(994, 944)
+
+[node name="Coin3" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(3632, -812)
+
+[node name="Coin27" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(3984, -812)
+
+[node name="Coin28" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(4363, -812)
+
+[node name="Coin29" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(1725, -551)
+
+[node name="Coin30" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(2104, -556)
+
+[node name="Coin32" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(5500, -556)
+
+[node name="Coin33" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(7567, -807)
+
+[node name="Coin34" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(9863, -807)
+
+[node name="Coin35" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(11454, -583)
+
+[node name="Coin36" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(11705, -583)
+
+[node name="Coin37" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(11972, -583)
+
+[node name="Coin38" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(12207, -583)
+
+[node name="Coin39" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(12437, -583)
+
+[node name="Coin31" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(2488, -551)
+
+[node name="Coin4" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(4891, 955)
+
+[node name="Coin5" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(5372, 955)
+
+[node name="Coin6" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(5927, 955)
+
+[node name="Coin7" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(7016, 773)
+
+[node name="Coin8" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(7635, 773)
+
+[node name="Coin9" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(8190, 773)
+
+[node name="Coin10" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(9215, 923)
+
+[node name="Coin11" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(9589, 923)
+
+[node name="Coin12" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(9984, 923)
+
+[node name="Coin13" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(10764, 1158)
+
+[node name="Coin14" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(11287, 934)
+
+[node name="Coin15" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(11800, 646)
+
+[node name="Coin16" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(12291, 411)
+
+[node name="Coin17" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(13434, 635)
+
+[node name="Coin18" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(13840, 635)
+
+[node name="Coin19" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(14289, 635)
+
+[node name="Coin20" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(14289, 1137)
+
+[node name="Coin21" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(13830, 1137)
+
+[node name="Coin22" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(13381, 1137)
+
+[node name="Coin23" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(13957, 1725)
+
+[node name="Coin24" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(13583, 1725)
+
+[node name="Coin25" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(9771, 1618)
+
+[node name="Coin26" parent="Coins" instance=ExtResource("10_g6brq")]
+position = Vector2(9023, 1618)
+
+[node name="Castle" type="Node2D" parent="."]
+
+[node name="WindowStoneDarkShadow" type="Sprite2D" parent="Castle"]
+position = Vector2(13588, -729)
+texture = ExtResource("11_12hp8")
+
+[node name="WindowStoneDarkShadow2" type="Sprite2D" parent="Castle"]
+position = Vector2(13754, -729)
+texture = ExtResource("11_12hp8")
+
+[node name="WindowStoneDarkShadow3" type="Sprite2D" parent="Castle"]
+position = Vector2(13921, -729)
+texture = ExtResource("11_12hp8")
+
+[node name="WindowStoneDarkShadow4" type="Sprite2D" parent="Castle"]
+position = Vector2(14088, -729)
+texture = ExtResource("11_12hp8")
+
+[node name="WindowStoneDarkShadow5" type="Sprite2D" parent="Castle"]
+position = Vector2(14254, -729)
+texture = ExtResource("11_12hp8")
+
+[node name="WindowStoneDarkShadow6" type="Sprite2D" parent="Castle"]
+position = Vector2(14421, -729)
+texture = ExtResource("11_12hp8")
+
+[node name="WindowStoneDarkShadow7" type="Sprite2D" parent="Castle"]
+position = Vector2(14508, -729)
+texture = ExtResource("11_12hp8")
+
+[node name="WallStone1" type="Sprite2D" parent="Castle"]
+position = Vector2(14299, -131)
+texture = ExtResource("12_61362")
+
+[node name="WallStone2" type="Sprite2D" parent="Castle"]
+position = Vector2(14045, -131)
+texture = ExtResource("12_61362")
+
+[node name="WallStone3" type="Sprite2D" parent="Castle"]
+position = Vector2(13790, -131)
+texture = ExtResource("12_61362")
+
+[node name="WallStone4" type="Sprite2D" parent="Castle"]
+position = Vector2(13790, -382)
+texture = ExtResource("12_61362")
+
+[node name="WallStone5" type="Sprite2D" parent="Castle"]
+position = Vector2(14044, -382)
+texture = ExtResource("12_61362")
+
+[node name="WallStone6" type="Sprite2D" parent="Castle"]
+position = Vector2(14300, -382)
+texture = ExtResource("12_61362")
+
+[node name="WallStone7" type="Sprite2D" parent="Castle"]
+position = Vector2(14300, -633)
+texture = ExtResource("12_61362")
+
+[node name="WallStone8" type="Sprite2D" parent="Castle"]
+position = Vector2(14044, -633)
+texture = ExtResource("12_61362")
+
+[node name="WallStone9" type="Sprite2D" parent="Castle"]
+position = Vector2(13790, -633)
+texture = ExtResource("12_61362")
+
+[node name="WallStoneRight" type="Sprite2D" parent="Castle"]
+position = Vector2(14508, -129)
+texture = ExtResource("13_shjtc")
+
+[node name="WallStoneRight2" type="Sprite2D" parent="Castle"]
+position = Vector2(14510, -382)
+texture = ExtResource("13_shjtc")
+
+[node name="WallStoneRight3" type="Sprite2D" parent="Castle"]
+position = Vector2(14509, -633)
+texture = ExtResource("13_shjtc")
+
+[node name="DoorwayStone" type="Sprite2D" parent="Castle"]
+position = Vector2(14096, -115)
+texture = ExtResource("14_3kfe2")
+
+[node name="Door3" parent="Castle" instance=ExtResource("15_q80cp")]
+position = Vector2(14012, 3)
+next_scene = "Level4"
+
+[node name="WallStoneLeft" type="Sprite2D" parent="Castle"]
+position = Vector2(13583, -130)
+texture = ExtResource("16_xkjpo")
+
+[node name="WallStoneLeft2" type="Sprite2D" parent="Castle"]
+position = Vector2(13583, -385)
+texture = ExtResource("16_xkjpo")
+
+[node name="WallStoneLeft3" type="Sprite2D" parent="Castle"]
+position = Vector2(13583, -635)
+texture = ExtResource("16_xkjpo")
+
+[node name="WallStone10" type="Sprite2D" parent="Castle"]
+position = Vector2(13865, -445)
+texture = ExtResource("17_i6xiw")
+
+[node name="WallStone11" type="Sprite2D" parent="Castle"]
+position = Vector2(14296, -381)
+texture = ExtResource("18_rlnko")
+
+[node name="Anvil" type="Sprite2D" parent="Castle"]
+position = Vector2(13654, -41)
+texture = ExtResource("19_l471m")
+
+[node name="Cave Door" type="Node2D" parent="."]
+
+[node name="DoorCaveDark" type="Sprite2D" parent="Cave Door"]
+position = Vector2(368, -142)
+texture = ExtResource("20_xfg2b")
+
+[node name="Door" type="Sprite2D" parent="Cave Door"]
+position = Vector2(372, -91)
+texture = ExtResource("15_xrvlp")
+
+[node name="RockLarge2Dark" type="Sprite2D" parent="Cave Door"]
+position = Vector2(804, -149)
+texture = ExtResource("21_1300f")
+
+[node name="RockLarge3Dark" type="Sprite2D" parent="Cave Door"]
+position = Vector2(1079, -109)
+texture = ExtResource("22_runut")
+
+[node name="RockLarge1" type="Sprite2D" parent="Cave Door"]
+position = Vector2(1255, -143)
+texture = ExtResource("23_mfhro")
+
+[node name="RockSmall3" type="Sprite2D" parent="Cave Door"]
+position = Vector2(123, -58)
+texture = ExtResource("24_vwxeb")
+
+[node name="Mushroom2" type="Sprite2D" parent="Cave Door"]
+position = Vector2(2608, -21)
+texture = ExtResource("25_7rf34")
+
+[node name="Mushroom5" type="Sprite2D" parent="Cave Door"]
+position = Vector2(2803, -23)
+texture = ExtResource("26_1l4pw")
+
+[node name="Mushroom3" type="Sprite2D" parent="Cave Door"]
+position = Vector2(2723, -31)
+texture = ExtResource("27_jo81y")
+
+[node name="Mushroom4" type="Sprite2D" parent="Cave Door"]
+position = Vector2(2739, -23)
+texture = ExtResource("28_vaqlq")
+
+[node name="Mushroom1" type="Sprite2D" parent="Cave Door"]
+position = Vector2(2866, -37)
+texture = ExtResource("29_7g4ox")
+
+[node name="Tracks" type="Node2D" parent="."]
+
+[node name="TracksLeft" type="Sprite2D" parent="Tracks"]
+position = Vector2(8159, -90)
+texture = ExtResource("30_76r3y")
+
+[node name="TracksMid" type="Sprite2D" parent="Tracks"]
+position = Vector2(8413, -24)
+texture = ExtResource("31_5ugjh")
+
+[node name="TracksMid2" type="Sprite2D" parent="Tracks"]
+position = Vector2(8672, -22)
+texture = ExtResource("31_5ugjh")
+
+[node name="TracksRight" type="Sprite2D" parent="Tracks"]
+position = Vector2(8923, -90)
+texture = ExtResource("32_xltn5")
+
+[node name="Signpost" type="Sprite2D" parent="Tracks"]
+position = Vector2(9185, -101)
+texture = ExtResource("33_ubbkc")
+
+[node name="TreasureGold" type="Sprite2D" parent="Tracks"]
+position = Vector2(11259, -8)
+texture = ExtResource("34_3xkiq")
+
+[node name="MinecartFull" type="Sprite2D" parent="Tracks"]
+position = Vector2(8579, -144)
+texture = ExtResource("35_v61rj")
+
+[node name="TracksLeft2" type="Sprite2D" parent="Tracks"]
+position = Vector2(4183, -87.5)
+texture = ExtResource("30_76r3y")
+
+[node name="TracksMid3" type="Sprite2D" parent="Tracks"]
+position = Vector2(4427, -20.5)
+texture = ExtResource("31_5ugjh")
+
+[node name="TracksMid4" type="Sprite2D" parent="Tracks"]
+position = Vector2(4681, -21)
+texture = ExtResource("31_5ugjh")
+
+[node name="TracksMid5" type="Sprite2D" parent="Tracks"]
+position = Vector2(4936, -21)
+texture = ExtResource("31_5ugjh")
+
+[node name="TracksMid6" type="Sprite2D" parent="Tracks"]
+position = Vector2(5192, -21)
+texture = ExtResource("31_5ugjh")
+
+[node name="TracksMid7" type="Sprite2D" parent="Tracks"]
+position = Vector2(5448, -21)
+texture = ExtResource("31_5ugjh")
+
+[node name="TracksMid8" type="Sprite2D" parent="Tracks"]
+position = Vector2(5704, -21)
+texture = ExtResource("31_5ugjh")
+
+[node name="TracksMid9" type="Sprite2D" parent="Tracks"]
+position = Vector2(5959, -21)
+texture = ExtResource("31_5ugjh")
+
+[node name="TracksMid10" type="Sprite2D" parent="Tracks"]
+position = Vector2(6215, -21)
+texture = ExtResource("31_5ugjh")
+
+[node name="TracksMid11" type="Sprite2D" parent="Tracks"]
+position = Vector2(6471, -21)
+texture = ExtResource("31_5ugjh")
+
+[node name="TracksMid12" type="Sprite2D" parent="Tracks"]
+position = Vector2(6727, -21)
+texture = ExtResource("31_5ugjh")
+
+[node name="TracksRight2" type="Sprite2D" parent="Tracks"]
+position = Vector2(6975, -89)
+texture = ExtResource("32_xltn5")
+
+[node name="MinecartEmpty" type="Sprite2D" parent="Tracks"]
+position = Vector2(4359, -128)
+texture = ExtResource("36_abubu")
+
+[node name="TreasureChest" parent="." node_paths=PackedStringArray("spawn_point_key", "spawn_point_coin") instance=ExtResource("10_5cj3u")]
+position = Vector2(1151, 1867)
+spawn_point_key = NodePath("SpawnKey")
+spawn_point_coin = NodePath("SpawnCoin")
+
+[node name="SpawnKey" type="Marker2D" parent="TreasureChest"]
+position = Vector2(-875, -55)
+
+[node name="SpawnCoin" type="Marker2D" parent="TreasureChest"]
+position = Vector2(-612, -42)
+
+[node name="Knight" parent="." instance=ExtResource("7_it0t6")]
+position = Vector2(665, -48)
+
+[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("knight")]
+limit_left = 0
+limit_top = -1000
+limit_right = 14550
+limit_bottom = 1950
+script = ExtResource("8_jdma0")
+knight = NodePath("../Knight")
+
+[node name="Crystals" type="Node2D" parent="."]
+
+[node name="Crystal1" type="Sprite2D" parent="Crystals"]
+position = Vector2(12757, -133)
+texture = ExtResource("40_igebi")
+
+[node name="Crystal2" type="Sprite2D" parent="Crystals"]
+position = Vector2(12927, -118)
+texture = ExtResource("41_d5jh7")
+
+[node name="Crystal3" type="Sprite2D" parent="Crystals"]
+position = Vector2(12530, -107)
+texture = ExtResource("42_pe35c")
+
+[node name="Crystal4" type="Sprite2D" parent="Crystals"]
+position = Vector2(10607, -101)
+texture = ExtResource("42_pe35c")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("44_j24gs")

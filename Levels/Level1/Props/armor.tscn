@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b7sl7f62lu0p7"]
+
+[ext_resource type="Texture2D" uid="uid://bbjw45yn4mtgo" path="res://Assets/Props/Level1 Room Props/Room Props/Suit_Of_Armour.png" id="1_4i68t"]
+[ext_resource type="Script" path="res://Levels/Level1/Props/armor.gd" id="1_mopix"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7h5nc"]
+size = Vector2(93, 194)
+
+[node name="Armor" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_mopix")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -99)
+texture = ExtResource("1_4i68t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.5, -100)
+shape = SubResource("RectangleShape2D_7h5nc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

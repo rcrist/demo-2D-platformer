@@ -1,0 +1,161 @@
+[gd_scene load_steps=37 format=3 uid="uid://cg1sot7bmbi75"]
+
+[ext_resource type="Script" path="res://Levels/Level1/Animated Props/treasure_chest.gd" id="1_r483i"]
+[ext_resource type="Texture2D" uid="uid://414wfxfvo4se" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_00.png" id="2_o3v4u"]
+[ext_resource type="Texture2D" uid="uid://ds22epni082gj" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_01.png" id="3_icjpi"]
+[ext_resource type="Texture2D" uid="uid://5rp5g1sgp66g" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_02.png" id="4_15ria"]
+[ext_resource type="Texture2D" uid="uid://udk367kup6bs" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_03.png" id="5_8sj12"]
+[ext_resource type="Texture2D" uid="uid://bp6rqei7s4kf5" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_04.png" id="6_w0dau"]
+[ext_resource type="Texture2D" uid="uid://d3ytlusr40rkm" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_05.png" id="7_bno1c"]
+[ext_resource type="Texture2D" uid="uid://67gl2grkq0ne" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_06.png" id="8_ri0fh"]
+[ext_resource type="Texture2D" uid="uid://5o2pl3s5tj2w" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_07.png" id="9_mcxue"]
+[ext_resource type="Texture2D" uid="uid://c7253gcnn6ykh" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_08.png" id="10_og1h4"]
+[ext_resource type="Texture2D" uid="uid://b2nu40jyw3b2" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_09.png" id="11_1bbfb"]
+[ext_resource type="Texture2D" uid="uid://b7v7sv2yobvj8" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_10.png" id="12_3q30q"]
+[ext_resource type="Texture2D" uid="uid://va1tkx5u61ns" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_11.png" id="13_ol22u"]
+[ext_resource type="Texture2D" uid="uid://lgwd3l7yqfxj" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_12.png" id="14_0tice"]
+[ext_resource type="Texture2D" uid="uid://dd87xv0xsh6sh" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_13.png" id="15_erntu"]
+[ext_resource type="Texture2D" uid="uid://btws685vwtxda" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_14.png" id="16_vru5f"]
+[ext_resource type="Texture2D" uid="uid://ckxjdc5f414gq" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_15.png" id="17_t1x4a"]
+[ext_resource type="Texture2D" uid="uid://damrpcm5lipd0" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_16.png" id="18_scyo0"]
+[ext_resource type="Texture2D" uid="uid://d2ukr0yf8s6at" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_17.png" id="19_f13v2"]
+[ext_resource type="Texture2D" uid="uid://b5ytf1m36beyt" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_18.png" id="20_g5pcg"]
+[ext_resource type="Texture2D" uid="uid://c25pj4tnn13jb" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_19.png" id="21_hiwl4"]
+[ext_resource type="Texture2D" uid="uid://dfs8tkkifv5ks" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_20.png" id="22_6726s"]
+[ext_resource type="Texture2D" uid="uid://cf5bq2pgbj2qw" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_21.png" id="23_cjwmo"]
+[ext_resource type="Texture2D" uid="uid://b01qja1vc6m3f" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_22.png" id="24_mriog"]
+[ext_resource type="Texture2D" uid="uid://c5j0fmpffxe3b" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_23.png" id="25_1nny0"]
+[ext_resource type="Texture2D" uid="uid://3nkxgytgil3b" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_24.png" id="26_7mtj2"]
+[ext_resource type="Texture2D" uid="uid://3ee5a6sy3vh1" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_25.png" id="27_keoxc"]
+[ext_resource type="Texture2D" uid="uid://pr7gh620rwr7" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_26.png" id="28_027l6"]
+[ext_resource type="Texture2D" uid="uid://drwtxb4vm6q34" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_27.png" id="29_g0lnc"]
+[ext_resource type="Texture2D" uid="uid://cr476llfwino4" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_28.png" id="30_o2a3e"]
+[ext_resource type="Texture2D" uid="uid://hpsbkrydqieg" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_29.png" id="31_ku8hn"]
+[ext_resource type="Texture2D" uid="uid://cepej72owt1r5" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_30.png" id="32_f8x4m"]
+[ext_resource type="Texture2D" uid="uid://b6js8tkd5255b" path="res://Assets/Props/Level1 Room Props/Animated Props/Treasure Chest/prop_treasurechest_open_gold_31.png" id="33_00sma"]
+[ext_resource type="AudioStream" uid="uid://mjjbkxyao2v3" path="res://Assets/Audio/SFX/Environment/SFX_Chest_Close.wav" id="34_ut2mq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2du30"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_o3v4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_icjpi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_15ria")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8sj12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_w0dau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_bno1c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ri0fh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mcxue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_og1h4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1bbfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_3q30q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ol22u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_0tice")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_erntu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_vru5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_t1x4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_scyo0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_f13v2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_g5pcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_hiwl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6726s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_cjwmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_mriog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_1nny0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_7mtj2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_keoxc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_027l6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_g0lnc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_o2a3e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_ku8hn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_f8x4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_00sma")
+}],
+"loop": false,
+"name": &"open",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k3vd8"]
+size = Vector2(177, 117.5)
+
+[node name="TreasureChest" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_r483i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -114)
+sprite_frames = SubResource("SpriteFrames_2du30")
+animation = &"open"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(24, -60.25)
+shape = SubResource("RectangleShape2D_k3vd8")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("34_ut2mq")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

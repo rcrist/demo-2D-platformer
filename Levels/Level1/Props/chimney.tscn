@@ -1,0 +1,101 @@
+[gd_scene load_steps=23 format=3 uid="uid://cbfcinsnj1jsr"]
+
+[ext_resource type="Texture2D" uid="uid://boonc8dankuhd" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_00.png" id="1_gyy4i"]
+[ext_resource type="Texture2D" uid="uid://cxy1igu17kcpk" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_01.png" id="2_ycu5n"]
+[ext_resource type="Texture2D" uid="uid://dgdo235r113fw" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_02.png" id="3_uaw13"]
+[ext_resource type="Texture2D" uid="uid://bgxlkbguvvscr" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_03.png" id="4_pdgy3"]
+[ext_resource type="Texture2D" uid="uid://dnli5whgt2fjy" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_04.png" id="5_2vkbr"]
+[ext_resource type="Texture2D" uid="uid://jcpsc0n3iil1" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_05.png" id="6_kevk2"]
+[ext_resource type="Texture2D" uid="uid://bqka21y3un20" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_06.png" id="7_7dypw"]
+[ext_resource type="Texture2D" uid="uid://dnhmgu6lyw8vk" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_07.png" id="8_w21wo"]
+[ext_resource type="Texture2D" uid="uid://bjw25fb2q2o43" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_08.png" id="9_nayiu"]
+[ext_resource type="Texture2D" uid="uid://by2411476gyqy" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_09.png" id="10_1euvb"]
+[ext_resource type="Texture2D" uid="uid://0y3ivqs4nnok" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_10.png" id="11_vesuc"]
+[ext_resource type="Texture2D" uid="uid://ywy04qgkc1ef" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_11.png" id="12_n14pg"]
+[ext_resource type="Texture2D" uid="uid://b6qyyrv0pnxrx" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_12.png" id="13_ndppy"]
+[ext_resource type="Texture2D" uid="uid://3vtp4jcwfgy" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_13.png" id="14_66rlh"]
+[ext_resource type="Texture2D" uid="uid://dya3mkp50j63e" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_14.png" id="15_drv7j"]
+[ext_resource type="Texture2D" uid="uid://b6vvfys0wllim" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_15.png" id="16_gbkx7"]
+[ext_resource type="Texture2D" uid="uid://cyartvg470ccs" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_16.png" id="17_bemox"]
+[ext_resource type="Texture2D" uid="uid://cmdbchu52ny3x" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_17.png" id="18_5p0wf"]
+[ext_resource type="Texture2D" uid="uid://bwt81kcnewymp" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_18.png" id="19_fay7p"]
+[ext_resource type="Texture2D" uid="uid://j7rpnufy7reu" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_19.png" id="20_6fkcb"]
+[ext_resource type="Texture2D" uid="uid://jefelukaf1ti" path="res://Assets/Props/Level1 Room Props/Animated Props/Chimney/prop_chimneyindoor_lit_20.png" id="21_ynmtk"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xnvyr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gyy4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ycu5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_uaw13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pdgy3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2vkbr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_kevk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_7dypw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_w21wo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_nayiu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1euvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_vesuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_n14pg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ndppy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_66rlh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_drv7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gbkx7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_bemox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_5p0wf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_fay7p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_6fkcb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ynmtk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[node name="Chimney" type="AnimatedSprite2D"]
+position = Vector2(0, -153)
+sprite_frames = SubResource("SpriteFrames_xnvyr")
+autoplay = "default"
+frame = 12
+frame_progress = 0.280835

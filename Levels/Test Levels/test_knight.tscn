@@ -1,0 +1,70 @@
+[gd_scene load_steps=10 format=4 uid="uid://d2wgghqnlthav"]
+
+[ext_resource type="PackedScene" uid="uid://dcvn1qkx07gyh" path="res://UI/hud_2.tscn" id="1_2usv3"]
+[ext_resource type="Texture2D" uid="uid://dwkxiv4jm76vc" path="res://Assets/Test Blocks/Test_Block_256x256.png" id="2_j2k64"]
+[ext_resource type="PackedScene" uid="uid://cpt6uhtvg1tym" path="res://Enemies/Spider/enemy_spider.tscn" id="4_dvl16"]
+[ext_resource type="PackedScene" uid="uid://c5j442maknynj" path="res://Player/knight.tscn" id="4_ylyqu"]
+[ext_resource type="Script" path="res://Levels/Test Levels/knight_camera_2d.gd" id="5_vnxjx"]
+[ext_resource type="PackedScene" uid="uid://bg2eyh5qv6g0t" path="res://Pickups/Bow/bow_pickup.tscn" id="7_uslya"]
+[ext_resource type="PackedScene" uid="uid://lisws7o0no4g" path="res://Levels/Level2/dummy.tscn" id="9_w2kvr"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wnqmj"]
+texture = ExtResource("2_j2k64")
+texture_region_size = Vector2i(256, 256)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-128, -128, 128, -128, 128, 128, -128, 128)
+
+[sub_resource type="TileSet" id="TileSet_dgdlu"]
+tile_size = Vector2i(256, 256)
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 5
+sources/1 = SubResource("TileSetAtlasSource_wnqmj")
+
+[node name="TestKnight" type="Node2D"]
+
+[node name="HUD2" parent="." instance=ExtResource("1_2usv3")]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD//wEAAQAAAAAAAAAAAAEAAQAAAAAAAAD8/wEAAQAAAAAAAAD9/wEAAQAAAAAAAAD+/wEAAQAAAAAAAAABAAEAAQAAAAAAAAACAAEAAQAAAAAAAAADAAEAAQAAAAAAAAAEAAEAAQAAAAAAAAAFAAEAAQAAAAAAAAAGAAEAAQAAAAAAAAAHAAEAAQAAAAAAAAD7/wEAAQAAAAAAAAD6/wEAAQAAAAAAAAD5/wEAAQAAAAAAAAD4/wEAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_dgdlu")
+
+[node name="PersitentCamera" type="Camera2D" parent="."]
+position = Vector2(-4, 233)
+script = ExtResource("5_vnxjx")
+
+[node name="Knight" parent="." instance=ExtResource("4_ylyqu")]
+position = Vector2(198, 236)
+
+[node name="EnemySpider" parent="." node_paths=PackedStringArray("patrol_points") instance=ExtResource("4_dvl16")]
+visible = false
+position = Vector2(458, 243)
+patrol_points = NodePath("PatrolPoints")
+
+[node name="PatrolPoints" type="Node" parent="EnemySpider"]
+
+[node name="Point1" type="Marker2D" parent="EnemySpider/PatrolPoints"]
+visible = false
+position = Vector2(299, 233)
+
+[node name="Point2" type="Marker2D" parent="EnemySpider/PatrolPoints"]
+visible = false
+position = Vector2(596, 229)
+
+[node name="BowPickup" parent="." instance=ExtResource("7_uslya")]
+position = Vector2(-490, 179)
+scale = Vector2(0.5, 0.5)
+
+[node name="Dummy" parent="." instance=ExtResource("9_w2kvr")]
+position = Vector2(-967, 243)
+
+[node name="EnemySpider2" parent="." node_paths=PackedStringArray("patrol_points") instance=ExtResource("4_dvl16")]
+position = Vector2(770, 248)
+patrol_points = NodePath("PatrolPoints")
+
+[node name="PatrolPoints" type="Node" parent="EnemySpider2"]
+
+[node name="Point1" type="Marker2D" parent="EnemySpider2/PatrolPoints"]
+position = Vector2(428, 232)
+
+[node name="Point2" type="Marker2D" parent="EnemySpider2/PatrolPoints"]
+position = Vector2(1031, 243)

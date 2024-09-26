@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci8x1icmnhupb"]
+
+[ext_resource type="Texture2D" uid="uid://ben8p4uhah0sf" path="res://Assets/Test Blocks/Test_Block_128x128.png" id="1_3yhgb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aqdfy"]
+size = Vector2(128, 128)
+
+[node name="TestBlock" type="Area2D"]
+collision_layer = 2
+collision_mask = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3yhgb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_aqdfy")

@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cp5s0m5c7rue6"]
+
+[ext_resource type="Script" path="res://Levels/Level1/Props/door.gd" id="1_6glnt"]
+[ext_resource type="Texture2D" uid="uid://d2t13t05ctka3" path="res://Assets/Props/Level1 Room Props/Room Props/Door.png" id="1_eyypj"]
+[ext_resource type="AudioStream" uid="uid://b36im6v4i1rlc" path="res://Assets/Audio/SFX/Environment/SFX_Door_Open1.wav" id="3_p23mb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qugu5"]
+size = Vector2(244, 283.5)
+
+[node name="Door" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_6glnt")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -142)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("1_eyypj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -141.25)
+shape = SubResource("RectangleShape2D_qugu5")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_p23mb")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

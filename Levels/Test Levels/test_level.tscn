@@ -1,0 +1,105 @@
+[gd_scene load_steps=15 format=3 uid="uid://lmrvhvqipvjc"]
+
+[ext_resource type="Texture2D" uid="uid://ben8p4uhah0sf" path="res://Assets/Test Blocks/Test_Block_128x128.png" id="1_2n8gp"]
+[ext_resource type="PackedScene" uid="uid://dcvn1qkx07gyh" path="res://UI/hud_2.tscn" id="1_wdnt6"]
+[ext_resource type="PackedScene" uid="uid://c7r6gcb3pp0gt" path="res://Levels/Level1/Ladder/ladder.tscn" id="3_wgi5r"]
+[ext_resource type="PackedScene" uid="uid://cwbu2g3vfh1g1" path="res://Player/player.tscn" id="4_f5163"]
+[ext_resource type="PackedScene" uid="uid://cpt6uhtvg1tym" path="res://Enemies/Spider/enemy_spider.tscn" id="4_u7a8p"]
+[ext_resource type="PackedScene" uid="uid://b2go2pbmrcfdl" path="res://Enemies/Bat/enemy_bat.tscn" id="5_8sf87"]
+[ext_resource type="PackedScene" uid="uid://doxrbygrqsbxn" path="res://Enemies/Skeleton/enemy_skeleton.tscn" id="6_yq83r"]
+[ext_resource type="PackedScene" uid="uid://1hevbvlvlh3t" path="res://Pickups/Coin/coin.tscn" id="7_c1g8a"]
+[ext_resource type="PackedScene" uid="uid://bjn4gfyabuwxx" path="res://Pickups/Health Potion/health_potion.tscn" id="8_61ldg"]
+[ext_resource type="PackedScene" uid="uid://dbsfdb6e1wmda" path="res://Pickups/Key/key.tscn" id="9_77b5p"]
+[ext_resource type="Script" path="res://Levels/Level1/player_camera_2d.gd" id="10_1xv3k"]
+[ext_resource type="PackedScene" uid="uid://cg1sot7bmbi75" path="res://Levels/Level1/Animated Props/treasure_chest.tscn" id="12_b3x5c"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nsgti"]
+texture = ExtResource("1_2n8gp")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+
+[sub_resource type="TileSet" id="TileSet_nhvyn"]
+tile_size = Vector2i(128, 128)
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 5
+sources/0 = SubResource("TileSetAtlasSource_nsgti")
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="HUD2" parent="." instance=ExtResource("1_wdnt6")]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_nhvyn")
+format = 2
+layer_0/tile_data = PackedInt32Array(393216, 0, 0, 393217, 0, 0, 393218, 0, 0, 393219, 0, 0, 393220, 0, 0, 393221, 0, 0, 393222, 0, 0, 393223, 0, 0, 393224, 0, 0, 393225, 0, 0, 393226, 0, 0, 393227, 0, 0, 393228, 0, 0, 393229, 0, 0, 458751, 0, 0, 196615, 0, 0, 196616, 0, 0, 196617, 0, 0, 196609, 0, 0, 262145, 0, 0, 327681, 0, 0, 393230, 0, 0, 393231, 0, 0, 393232, 0, 0, 393233, 0, 0, 393234, 0, 0, 393235, 0, 0, 393236, 0, 0, 393237, 0, 0, 393238, 0, 0, 393239, 0, 0, 393240, 0, 0, 458750, 0, 0, 458749, 0, 0, 458748, 0, 0, 458747, 0, 0, 458746, 0, 0, 458745, 0, 0, 458744, 0, 0, 458743, 0, 0, 458742, 0, 0, -65546, 0, 0, -10, 0, 0, 65526, 0, 0, 131062, 0, 0, 196598, 0, 0, 262134, 0, 0, 327670, 0, 0, 393206, 0, 0, -131048, 0, 0, -65512, 0, 0, 24, 0, 0, 65560, 0, 0, 131096, 0, 0, 196632, 0, 0, 262168, 0, 0, 327704, 0, 0)
+
+[node name="TreasureChest" parent="." node_paths=PackedStringArray("spawn_point_key", "spawn_point_coin") instance=ExtResource("12_b3x5c")]
+position = Vector2(-1058, 766)
+spawn_point_key = NodePath("SpawnKey1")
+spawn_point_coin = NodePath("SpawnCoin1")
+
+[node name="SpawnKey1" type="Marker2D" parent="TreasureChest"]
+position = Vector2(502, -28)
+
+[node name="SpawnCoin1" type="Marker2D" parent="TreasureChest"]
+position = Vector2(338, -28)
+
+[node name="Player" parent="." instance=ExtResource("4_f5163")]
+position = Vector2(632, 620)
+
+[node name="PlayerCamera2D" type="Camera2D" parent="Player"]
+position = Vector2(232, -224)
+script = ExtResource("10_1xv3k")
+
+[node name="Ladder" parent="." instance=ExtResource("3_wgi5r")]
+z_index = -1
+position = Vector2(832, 476)
+
+[node name="EnemySpider" parent="." node_paths=PackedStringArray("patrol_points") instance=ExtResource("4_u7a8p")]
+position = Vector2(1286, 736)
+patrol_points = NodePath("PatrolPoints")
+
+[node name="PatrolPoints" type="Node" parent="EnemySpider"]
+
+[node name="Point1" type="Marker2D" parent="EnemySpider/PatrolPoints"]
+position = Vector2(970, 730)
+
+[node name="Point2" type="Marker2D" parent="EnemySpider/PatrolPoints"]
+position = Vector2(1573, 741)
+
+[node name="EnemyBat" parent="." node_paths=PackedStringArray("patrol_points") instance=ExtResource("5_8sf87")]
+position = Vector2(481, 314)
+patrol_points = NodePath("PatrolPoints")
+
+[node name="PatrolPoints" type="Node" parent="EnemyBat"]
+
+[node name="Point1" type="Marker2D" parent="EnemyBat/PatrolPoints"]
+position = Vector2(194, 255)
+
+[node name="Point2" type="Marker2D" parent="EnemyBat/PatrolPoints"]
+position = Vector2(717, 246)
+
+[node name="EnemySkeleton" parent="." node_paths=PackedStringArray("patrol_points") instance=ExtResource("6_yq83r")]
+position = Vector2(2424, 758)
+patrol_points = NodePath("PatrolPoints")
+
+[node name="PatrolPoints" type="Node" parent="EnemySkeleton"]
+
+[node name="Point1" type="Marker2D" parent="EnemySkeleton/PatrolPoints"]
+position = Vector2(2245, 691)
+
+[node name="Point2" type="Marker2D" parent="EnemySkeleton/PatrolPoints"]
+position = Vector2(2536, 691)
+
+[node name="Coin" parent="." instance=ExtResource("7_c1g8a")]
+position = Vector2(-110, 736)
+
+[node name="Coin2" parent="." instance=ExtResource("7_c1g8a")]
+position = Vector2(-1, 733)
+
+[node name="HealthPotion" parent="." instance=ExtResource("8_61ldg")]
+position = Vector2(1648, 693)
+
+[node name="Key" parent="." instance=ExtResource("9_77b5p")]
+position = Vector2(1094, 324)

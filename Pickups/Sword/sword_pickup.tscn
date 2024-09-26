@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://b52yekl1510rp"]
+
+[ext_resource type="Texture2D" uid="uid://c5o42ghml2nrs" path="res://Assets/Player/Knight/Sword/sword.png" id="1_6eyxg"]
+[ext_resource type="Script" path="res://Pickups/Sword/sword_pickup.gd" id="1_wroam"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4aryj"]
+size = Vector2(33, 136)
+
+[sub_resource type="Animation" id="Animation_ximtj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_v8vk1"]
+resource_name = "idle"
+length = 1.2
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -10), Vector2(0, 0), Vector2(0, 10)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b1jif"]
+_data = {
+"RESET": SubResource("Animation_ximtj"),
+"idle": SubResource("Animation_v8vk1")
+}
+
+[node name="SwordPickup" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_wroam")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 0.436332
+texture = ExtResource("1_6eyxg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["Weapon"]]
+position = Vector2(0.5, 1)
+rotation = 0.436332
+shape = SubResource("RectangleShape2D_4aryj")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_b1jif")
+}
+autoplay = "idle"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

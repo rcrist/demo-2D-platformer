@@ -1,0 +1,74 @@
+[gd_scene load_steps=9 format=3 uid="uid://dcvn1qkx07gyh"]
+
+[ext_resource type="Script" path="res://UI/hud_2.gd" id="1_b3exd"]
+[ext_resource type="PackedScene" uid="uid://b5etokkvqeqiq" path="res://UI/fps.tscn" id="1_gtike"]
+[ext_resource type="Texture2D" uid="uid://clrgtvusya4vr" path="res://Assets/UI/heart_1.png" id="3_t3lgc"]
+[ext_resource type="Texture2D" uid="uid://scuiv7ekoqhi" path="res://Assets/UI/coin.png" id="4_a5ady"]
+[ext_resource type="PackedScene" uid="uid://bgy27yko3faqa" path="res://UI/messages.tscn" id="5_5nqnf"]
+[ext_resource type="Texture2D" uid="uid://bq3x8qxm124fy" path="res://Assets/UI/Pause-12-bg_black.png" id="6_tyaew"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eucb5"]
+bg_color = Color(0.629339, 0.618223, 0.294156, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xtx4t"]
+bg_color = Color(0.294566, 0.701628, 0.313042, 1)
+
+[node name="HUD2" type="CanvasLayer"]
+script = ExtResource("1_b3exd")
+
+[node name="FPS" parent="." instance=ExtResource("1_gtike")]
+offset_bottom = 0.0
+
+[node name="Heart" type="Sprite2D" parent="."]
+position = Vector2(29, 52)
+scale = Vector2(2, 2)
+texture = ExtResource("3_t3lgc")
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = 57.0
+offset_top = 41.0
+offset_right = 254.0
+offset_bottom = 58.0
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_eucb5")
+theme_override_styles/fill = SubResource("StyleBoxFlat_xtx4t")
+step = 1.0
+value = 50.0
+show_percentage = false
+
+[node name="Coin" type="Sprite2D" parent="."]
+position = Vector2(30, 91)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_a5ady")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 56.0
+offset_top = 73.0
+offset_right = 72.0
+offset_bottom = 112.0
+theme_override_font_sizes/font_size = 28
+text = "0
+"
+
+[node name="Messages" parent="." instance=ExtResource("5_5nqnf")]
+visible = false
+offset_left = 1090.0
+offset_top = 678.0
+offset_right = 1130.0
+offset_bottom = 718.0
+
+[node name="PauseTextureButton" type="TextureButton" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -100.0
+offset_top = 20.0
+offset_right = -60.0
+offset_bottom = 60.0
+grow_horizontal = 0
+scale = Vector2(4, 4)
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = ExtResource("6_tyaew")
+
+[connection signal="pressed" from="PauseTextureButton" to="." method="_on_pause_texture_button_pressed"]

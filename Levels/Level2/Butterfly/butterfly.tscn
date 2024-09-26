@@ -1,0 +1,123 @@
+[gd_scene load_steps=17 format=3 uid="uid://dxauhumsvjqq5"]
+
+[ext_resource type="Script" path="res://Levels/Level2/Butterfly/butterfly.gd" id="1_6hirf"]
+[ext_resource type="Texture2D" uid="uid://20ybosxxwc6q" path="res://Assets/Props/Level2 Forest Props/Outdoor Props/Animated Butterfly/prop_butterfly_fly_00-Sheet.png" id="1_25fvi"]
+
+[sub_resource type="Curve2D" id="Curve2D_bhwe7"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -542, -221, -86, -48, 86, 48, -532, 165, -96, 24, 96, -24, 250, 151, -56, 92, 56, -92, 596, -155, 46, 42, -46, -42, 572, -433, 76, -10, -76, 10, -162, -461, 0, 0, 0, 0, -542, -221)
+}
+point_count = 7
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7nicl"]
+atlas = ExtResource("1_25fvi")
+region = Rect2(0, 0, 78, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5f32g"]
+atlas = ExtResource("1_25fvi")
+region = Rect2(78, 0, 78, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aws2c"]
+atlas = ExtResource("1_25fvi")
+region = Rect2(156, 0, 78, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58n5q"]
+atlas = ExtResource("1_25fvi")
+region = Rect2(234, 0, 78, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0lxqb"]
+atlas = ExtResource("1_25fvi")
+region = Rect2(312, 0, 78, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifr7y"]
+atlas = ExtResource("1_25fvi")
+region = Rect2(390, 0, 78, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pw6ms"]
+atlas = ExtResource("1_25fvi")
+region = Rect2(468, 0, 78, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u1fw5"]
+atlas = ExtResource("1_25fvi")
+region = Rect2(546, 0, 78, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lij7m"]
+atlas = ExtResource("1_25fvi")
+region = Rect2(624, 0, 78, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jncm"]
+atlas = ExtResource("1_25fvi")
+region = Rect2(702, 0, 78, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qj83h"]
+atlas = ExtResource("1_25fvi")
+region = Rect2(780, 0, 78, 118)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a2qha"]
+atlas = ExtResource("1_25fvi")
+region = Rect2(858, 0, 78, 118)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6djfg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7nicl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5f32g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aws2c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_58n5q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0lxqb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ifr7y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pw6ms")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u1fw5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lij7m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jncm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qj83h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a2qha")
+}],
+"loop": true,
+"name": &"fly",
+"speed": 18.0
+}]
+
+[node name="Butterfly" type="Node2D"]
+position = Vector2(908, 573)
+script = ExtResource("1_6hirf")
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(-88, -24)
+curve = SubResource("Curve2D_bhwe7")
+metadata/_edit_group_ = true
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(-542, -221)
+rotation = 0.00325732
+rotates = false
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Path2D/PathFollow2D"]
+position = Vector2(2.00006, -0.00650775)
+rotation = -0.00325732
+sprite_frames = SubResource("SpriteFrames_6djfg")
+animation = &"fly"
+autoplay = "fly"

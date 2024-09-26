@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3 uid="uid://d6fnr1cwtw0j"]
+
+[ext_resource type="PackedScene" uid="uid://ci8x1icmnhupb" path="res://Levels/Test Level/TestBlock/test_block.tscn" id="1_0oxbh"]
+[ext_resource type="PackedScene" uid="uid://bf7rvuojiymlj" path="res://Player/player_knight.tscn" id="2_1tffu"]
+
+[node name="TestLevel2" type="Node2D"]
+
+[node name="Ground" type="Node2D" parent="."]
+
+[node name="TestBlock" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(66, 1168)
+
+[node name="TestBlock2" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(192, 1168)
+
+[node name="TestBlock3" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(320, 1168)
+
+[node name="TestBlock4" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(448, 1168)
+
+[node name="TestBlock5" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(576, 1168)
+
+[node name="TestBlock6" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(704, 1168)
+
+[node name="TestBlock7" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(832, 1168)
+
+[node name="TestBlock8" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(960, 1168)
+
+[node name="TestBlock9" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(1088, 1168)
+
+[node name="TestBlock10" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(1216, 1168)
+
+[node name="TestBlock11" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(1344, 1168)
+
+[node name="TestBlock12" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(1472, 1168)
+
+[node name="TestBlock13" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(1600, 1168)
+
+[node name="TestBlock14" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(1728, 1168)
+
+[node name="TestBlock15" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(1856, 1168)
+
+[node name="TestBlock16" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(1984, 1168)
+
+[node name="TestBlock17" parent="Ground" instance=ExtResource("1_0oxbh")]
+position = Vector2(2112, 1168)
+
+[node name="PlayerKnight" parent="." instance=ExtResource("2_1tffu")]
+position = Vector2(504, 1064)

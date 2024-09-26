@@ -1,0 +1,111 @@
+[gd_scene load_steps=26 format=3 uid="uid://c72sbffhnj1tf"]
+
+[ext_resource type="Texture2D" uid="uid://c2je55lhy2bku" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_00.png" id="1_hedb7"]
+[ext_resource type="Texture2D" uid="uid://byvury4dtjn0" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_01.png" id="2_m4npl"]
+[ext_resource type="Texture2D" uid="uid://x2hutmrogxq1" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_02.png" id="3_sqqu0"]
+[ext_resource type="Texture2D" uid="uid://2orvyeiqvhab" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_03.png" id="4_rw7x1"]
+[ext_resource type="Texture2D" uid="uid://b62opapqovc48" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_04.png" id="5_dr6pg"]
+[ext_resource type="Texture2D" uid="uid://bgnt4c1v6phry" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_05.png" id="6_ffwco"]
+[ext_resource type="Texture2D" uid="uid://c8t6vkbacyks0" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_06.png" id="7_diyl1"]
+[ext_resource type="Texture2D" uid="uid://cb2hbirwri4pk" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_07.png" id="8_f4m6y"]
+[ext_resource type="Texture2D" uid="uid://bhbm2tvq0k52v" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_08.png" id="9_d1d70"]
+[ext_resource type="Texture2D" uid="uid://dnfp76gu27b6r" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_09.png" id="10_4lj8b"]
+[ext_resource type="Texture2D" uid="uid://p3528p0iht0a" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_10.png" id="11_86n0g"]
+[ext_resource type="Texture2D" uid="uid://bs18eyb0js1oq" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_11.png" id="12_0l0d6"]
+[ext_resource type="Texture2D" uid="uid://6ctochsfyne" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_12.png" id="13_kpei4"]
+[ext_resource type="Texture2D" uid="uid://c7nrafj8s26bn" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_13.png" id="14_mo5qg"]
+[ext_resource type="Texture2D" uid="uid://cmxhd7kaagwpy" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_14.png" id="15_pkaus"]
+[ext_resource type="Texture2D" uid="uid://dut6u2w62bxjo" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_15.png" id="16_oi55x"]
+[ext_resource type="Texture2D" uid="uid://ctmjg1w4l1mhq" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_16.png" id="17_7fsev"]
+[ext_resource type="Texture2D" uid="uid://dfbwbyjnrlbg7" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_17.png" id="18_prkwe"]
+[ext_resource type="Texture2D" uid="uid://cjyukfyxp413m" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_18.png" id="19_k5gae"]
+[ext_resource type="Texture2D" uid="uid://dm0mguspdbigx" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_19.png" id="20_n3vg0"]
+[ext_resource type="Texture2D" uid="uid://oapw1nj1ojbg" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_20.png" id="21_pfx7g"]
+[ext_resource type="Texture2D" uid="uid://dcft4l408fxxa" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_21.png" id="22_cuabu"]
+[ext_resource type="Texture2D" uid="uid://ddxnytfrvhqhx" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_22.png" id="23_iiyxa"]
+[ext_resource type="Texture2D" uid="uid://c5p7da70axg1r" path="res://Assets/Props/Level1 Room Props/Animated Props/Candle/prop_candle_medium_lit_23.png" id="24_va04f"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_64t2r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_hedb7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_m4npl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_sqqu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rw7x1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_dr6pg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ffwco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_diyl1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_f4m6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_d1d70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_4lj8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_86n0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0l0d6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_kpei4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_mo5qg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pkaus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_oi55x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_7fsev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_prkwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_k5gae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_n3vg0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_pfx7g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_cuabu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_iiyxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_va04f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[node name="Candle" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_64t2r")
+autoplay = "default"
+frame_progress = 0.793046

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjfhd41e5n4yq"]
+
+[ext_resource type="Script" path="res://UI/message_trigger.gd" id="1_lgaxs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hfvau"]
+size = Vector2(20, 142)
+
+[node name="MessageTrigger" type="Area2D"]
+collision_layer = 8
+script = ExtResource("1_lgaxs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -71)
+shape = SubResource("RectangleShape2D_hfvau")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

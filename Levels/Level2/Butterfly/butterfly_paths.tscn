@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://daxajh5yolj3g"]
+
+[sub_resource type="Curve2D" id="Curve2D_d4541"]
+_data = {
+"points": PackedVector2Array(61, -33, -61, 33, -28, 73, -15, -25, 15, 25, 96, 177, -31, -30, 31, 30, 154, 314, -41, 15, 41, -15, 513, 307, 0, 60, 0, -60, 728, 159, 57, 13, -57, -13, 496, 37, -5, -41, 5, 41, -26, 72)
+}
+point_count = 7
+
+[node name="ButterflyPaths" type="Node"]
+
+[node name="Path2D" type="Path2D" parent="."]
+position = Vector2(9, -17)
+curve = SubResource("Curve2D_d4541")
