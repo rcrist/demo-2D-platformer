@@ -1,5 +1,5 @@
 # Demo 2D Platformer
-Demonstration 2D platformerproject in Godot 4.3 using GDscript.
+Demonstration 2D platformer project in Godot 4.3 using GDscript.
 
 # Levels
 ![RoomLevel1](https://github.com/user-attachments/assets/5a32730c-bd0f-4758-b165-c4c679e276de)
